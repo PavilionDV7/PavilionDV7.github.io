@@ -1022,6 +1022,21 @@ call-to-action .button {
    top: 17px;
 }
 
+/* contact social links */
+#contact .social {
+   margin-top: -30px;
+   font-size: 100px;
+   text-shadow: 0px 1px 2px rgba(0, 0, 0, .8);
+}
+#contact .social li {
+   display: inline-block;
+   margin: 0 15px;
+   padding: 0;
+}
+#contact .social li a { color: #525252; }
+#contact .social li a:hover { color: #11ABB0; }
+
+
 
 /* Twitter Feed */
 #twitter {
