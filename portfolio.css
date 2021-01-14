@@ -1,0 +1,44 @@
+/* @import url('https://fonts.googleapis.com/css?family=Montserrat:600|Open+Sans:600&display=swap'); */
+
+img.content-thumbnail {
+	width: 200px;
+	height: 200px;	
+}
+
+.container {
+	max-width: 80%;
+}
+
+.container.marketing h1 {
+	color: #094067;
+	font-size: 50px;
+	font-weight: 600;
+}
+
+.marketing .col-lg-4 {
+	max-width: 25em;
+	padding: 1em 0;
+	margin: .5em .5em;
+	text-align: center;
+	border: 1px solid rgba(207, 207, 207, 0.397);
+	border-radius: 2%;
+	box-shadow: 5px 5px 10px 0 rgb(0, 0, 0, .3);
+}
+
+
+.marketing .col-lg-4 p {
+	text-align: center;
+	margin: .5em 0;
+}
+
+.marketing .col-lg-4 h3{
+	color: #062b46;
+}
+
+.marketing h2 {
+	font-weight: 400;
+}
+
+.modal-title {
+	color: #094067;
+}

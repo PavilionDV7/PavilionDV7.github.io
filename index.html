@@ -1,692 +1,132 @@
-<!DOCTYPE html>
-<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 8)|!(IE)]><!-->
-<html class="no-js" lang="ja">
-<!--<![endif]-->
+<!doctype html>
+<html lang="ja">
 
 <head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-   <!--- Basic Page Needs
-   ================================================== -->
-   <meta charset="utf-8">
-   <title>PavilionDV7のポートフォリオ</title>
-   <meta name="description" content="PavilionDV7's portfolio page">
-   <meta name="author" content="PavilionDV7">
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="common.css">
+	<link rel="stylesheet" href="index.css">
+	<link rel="stylesheet" href="skill_rating.css">
 
-   <!-- Mobile Specific Metas
-   ================================================== -->
-   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="apple-touch-icon" type="image/png" href="/apple-touch-icon-180x180.png">
+	<link rel="icon" type="image/png" href="/icon-192x192.png">
 
-   <!-- CSS
-    ================================================== -->
-   <link rel="stylesheet" href="css/default.css">
-   <link rel="stylesheet" href="css/layout.css">
-   <link rel="stylesheet" href="css/media-queries.css">
-   <link rel="stylesheet" href="css/magnific-popup.css">
 
-   <!-- Script
-   ================================================== -->
-   <script src="js/modernizr.js"></script>
-
-   <!-- Favicons
-	================================================== -->
-   <link rel="shortcut icon" href="favicon.png">
-
+	<title>PavilionDV7's Portfolio</title>
 </head>
 
 <body>
 
-   <!-- Header
-   ================================================== -->
-   <header id="home">
-   
-      <nav id="nav-wrap">
-
-         <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
-         <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
-
-         <ul id="nav" class="nav">
-            <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
-            <li><a class="smoothscroll" href="#about">About</a></li>
-            <li><a class="smoothscroll" href="#portfolio">Works</a></li>
-            <li><a class="smoothscroll" href="#contact">Contact</a></li>
-         </ul> <!-- end #nav -->
-
-      </nav> <!-- end #nav-wrap -->
-
-      <div class="row banner">
-         <div class="banner-text">
-            <h2 class="responsive-headline" style="color: #3b3b3b;">PavilionDV7のポートフォリオ</h2>
-            <ul class="social">
-               <li><a href="https://twitter.com/Dv7Pavilion"><i class="fa fa-twitter"></i></a></li>
-               <li><a href="https://qiita.com/Dv7Pavilion">
-                     <span class="fa-stack" style="color:#4cb10d; font-size:small">
-                        <i class="fa fa-square fa-stack-2x"></i>
-                        <i class="fa fa-search fa-stack-1x fa-inverse fa-2x"></i>
-                     </span>
-                  </a></li>
-               <li><a href="https://paviliondv7.hatenablog.com"><i class="fa fa-pencil-square-o"></i></i></a></li>
-            </ul>
-         </div>
-      </div>
-
-   </header> <!-- Header End -->
-
-
-   <!-- About Section
-   ================================================== -->
-   <section id="about">
-
-      <div class="row">
-
-         <div class="three columns">
-
-            <img class="profile-pic" src="images/profilepic.jpg" alt="" />
-
-         </div>
-
-         <div class="nine columns main-col">
-
-            <h2>ABOUT ME</h2>
-
-            <p style="text-align: left;">
-               はじめまして。PavilionDV7と申します。<br><br>
-
-               主に自分の興味を持った技術について徹底的に調べ上げ<br>
-               Unreal Engine 4にて実装しその過程で得られた知見をQiitaや<br>
-               はてなブログでまとめています。
-
-            </p>
-
-         </div> <!-- end .main-col -->
-
-      </div>
-
-   </section> <!-- About Section End-->
-
-
-   <!-- Resume Section
-   ================================================== -->
-   <section id="resume">
-      
-      <!-- .skill-section -->
-      <section class="skill-section section" id="skill-section">
-         <div class="inner">
-
-            <div class="section-heading">
-               <h1 class="heading-primary" style="font-size: 50px; text-align: center; padding-bottom: 50px; color: rgba(47, 54, 59, 0.836);">SKILLS
-               </h1>
-            </div>
-
-            <!-- <div class="section-lead" style="text-align: center;padding-bottom: 50px;">未経験ですが頑張ります！</div> -->
-
-            <div class="section-body skill">
-               <div class="skill-list">
-                  <div class="skill-item">
-                     <div class="skill-image-wrapper">
-                        <!-- <img class="skill-image" src="images/skill/icon_skill.png" alt=""> -->
-                     </div>
-                     <div class="skill-body">
-                        <h3 class="skill-title">Unreal Engine 4</h3>
-                        <div class="skill-rating rating">
-                           <div class="rate rate5"></div>
-                        </div>
-                        <p>
-                           基本的な操作に加えUnreal C++を使ったゲームロジックの構築とSlateを利用したエディタ拡張まで実装できます。
-                        </p>
-                     </div>
-                  </div>
-                  <div class="skill-item">
-                     <div class="skill-image-wrapper">
-                        <!-- <img class="skill-image" src="images/skill/icon_skill.png" alt=""> -->
-                     </div>
-                     <div class="skill-body">
-                        <h3 class="skill-title">Unity 3.5 & Unity 4</h3>
-                        <div class="skill-rating rating">
-                           <div class="rate rate2"></div>
-                        </div>
-                        <p>
-                           Unity 3.5が発表された時からUnity 4まで触れていました。
-                           Unityの基本的な操作が出来ます。
-                        </p>
-                     </div>
-                  </div>
-                  <div class="skill-item">
-                     <div class="skill-image-wrapper">
-                        <!-- <img class="skill-image" src="images/skill/icon_skill.png" alt=""> -->
-                     </div>
-                     <div class="skill-body">
-                        <h3 class="skill-title">Unreal C++</h3>
-                        <div class="skill-rating rating">
-                           <div class="rate rate4"></div>
-                        </div>
-                        <p>
-                           基礎的な知識があります。
-                        </p>
-                     </div>
-                  </div>
-                  <div class="skill-item">
-                     <div class="skill-image-wrapper">
-                        <!-- <img class="skill-image" src="images/skill/icon_skill.png" alt=""> -->
-                     </div>
-                     <div class="skill-body">
-                        <h3 class="skill-title">Unity C#</h3>
-                        <div class="skill-rating rating">
-                           <div class="rate rate2"></div>
-                        </div>
-                        <p>
-                           Unity 4までの基礎的な知識があります。
-                        </p>
-                     </div>
-                  </div>
-                  <div class="skill-item">
-                     <div class="skill-image-wrapper">
-                        <!-- <img class="skill-image" src="images/skill/icon_skill.png" alt=""> -->
-                     </div>
-                     <div class="skill-body">
-                        <h3 class="skill-title">OpenGL + SDL</h3>
-                        <div class="skill-rating rating">
-                           <div class="rate rate3"></div>
-                        </div>
-                        <p>
-                           参考書を写経＆簡素なシューティングゲームを自作した程度です。
-                        </p>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </section>
-      <!-- /.skill-section -->
-
-   </section> <!-- Resume Section End-->
-
-
-
-   <!-- Portfolio Section
-   ================================================== -->
-   <section id="portfolio">
-
-      <div class="row">
-
-         <div class="twelve columns collapsed">
-
-            <h1 style="font-size: 50px;">WORKS</h1>
-
-            <!-- portfolio-wrapper -->
-            <div id="portfolio-wrapper" class="bgrid-quarters s-bgrid-thirds cf">
-
-               <div class="columns portfolio-item">
-                  <div class="item-wrap">
-
-                     <a href="#modal-01" title="">
-                        <img alt="" src="images/portfolio/StealthGameAIKit.png"> <!-- 制作物のスクショ -->
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-                              <h5>Stealth Game AI Kit</h5> <!-- タイトル -->
-                              <p>UE4 Marketplace 出品作品</p> <!-- 概要（１行） -->
-                           </div>
-                        </div>
-                        <div class="link-icon"><i class="icon-plus"></i></div>
-                     </a>
-
-                  </div>
-               </div> <!-- item end -->
-
-               <div class="columns portfolio-item">
-                  <div class="item-wrap">
-
-                     <a href="#modal-02" title="">
-                        <img alt="" src="images/portfolio/PetitCon_8.png">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-                              <h5>煩悩を60秒間消し続けるやつ</h5>
-                              <p>第8回ぷちコン応募作品</p>
-                           </div>
-                        </div>
-                        <div class="link-icon"><i class="icon-plus"></i></div>
-                     </a>
-
-                  </div>
-               </div> <!-- item end -->
-
-               <div class="columns portfolio-item">
-                  <div class="item-wrap">
-
-                     <a href="#modal-03" title="">
-                        <img alt="" src="images/portfolio/PetitCon_10.png">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-                              <h5>PETIT RUUUUUN!!</h5>
-                              <p>第10回ぷちコン応募作品</p>
-                           </div>
-                        </div>
-                        <div class="link-icon"><i class="icon-plus"></i></div>
-                     </a>
-
-                  </div>
-               </div> <!-- item end -->
-
-               <div class="columns portfolio-item">
-                  <div class="item-wrap">
-
-                     <a href="#modal-04" title="">
-                        <img alt="" src="images/portfolio/PetitCon_12.png">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-                              <h5>ILAY ～ofuton ni dive～</h5>
-                              <p>第12回ぷちコン応募作品</p>
-                           </div>
-                        </div>
-                        <div class="link-icon"><i class="icon-plus"></i></div>
-                     </a>
-
-                  </div>
-               </div> <!-- item end -->
-					
-					
-               <div class="columns portfolio-item">
-                  <div class="item-wrap">
-
-                     <a href="#modal-05" title="">
-                        <img alt="" src="images/portfolio/PetitCon_13.png">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-                              <h5>サクラサク</h5>
-                              <p>第13回ぷちコン応募作品</p>
-                           </div>
-                        </div>
-                        <div class="link-icon"><i class="icon-plus"></i></div>
-                     </a>
-
-                  </div>
-               </div> <!-- item end -->
-
-
-               <div class="columns portfolio-item">
-                  <div class="item-wrap">
-
-                     <a href="#modal-06" title="">
-                        <img alt="" src="images/portfolio/HTNEditorPlugin.png">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-                              <h5>HTN Editor Plugin</h5>
-                              <p>HTNドメイン構築用エディタ</p>
-                           </div>
-                        </div>
-                        <div class="link-icon"><i class="icon-plus"></i></div>
-                     </a>
-
-                  </div>
-               </div> <!-- item end -->
-
-               <div class="columns portfolio-item">
-                  <div class="item-wrap">
-
-                     <a href="#modal-07" title="">
-                        <img alt="" src="images/portfolio/PrimitiveShooter.png">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-                              <h5>Primitive Shooter</h5>
-                              <p>トップダウンビュー型シューティングゲーム</p>
-                           </div>
-                        </div>
-                        <div class="link-icon"><i class="icon-plus"></i></div>
-                     </a>
-
-                  </div>
-               </div> <!-- item end -->
-
-               <div class="columns portfolio-item">
-                  <div class="item-wrap">
-
-                     <a href="#modal-08" title="">
-                        <img alt="" src="images/portfolio/ThrRollingBall.png">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-                              <h5>Rolling Ball</h5>
-                              <p>スーパーモンキーボール風玉転がしゲーム</p>
-                           </div>
-                        </div>
-                        <div class="link-icon"><i class="icon-plus"></i></div>
-                     </a>
-
-                  </div>
-               </div> <!-- item end -->
-
-
-               <div class="columns portfolio-item">
-                  <div class="item-wrap">
-
-                     <a href="#modal-09" title="">
-                        <img alt="" src="images/portfolio/SimpleAsteroid2D.png">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-                              <h5>Simple Asteroid 2D</h5>
-                              <p>アステロイドゲーム</p>
-                           </div>
-                        </div>
-                        <div class="link-icon"><i class="icon-plus"></i></div>
-                     </a>
-
-                  </div>
-               </div> <!-- item end -->
-
-            </div> <!-- portfolio-wrapper end -->
-
-         </div> <!-- twelve columns end -->
-
-
-         <!-- Modal Popup
-	      --------------------------------------------------------------- -->
-
-         <div id="modal-01" class="popup-modal mfp-hide">
-
-            <img class="scale-with-grid" src="images/portfolio/modals/StealthGameAIKit.png" alt="" />
-
-            <div class="description-box">
-               <!-- 制作物のタイトル -->
-               <h4>Stealth Game AI Kit</h4>
-               <!-- 制作物の説明 -->
-               <p>
-                  Unreal Engine 4にて制作。<br><br>
-                  【製作日数】<br>
-                  ６ヶ月<br>
-                  【説明】<br>
-                  「ゲームAI」について１つの大きな成果物を出したいと考えマーケットプレイスにてステルスゲームのAIにフォーカスしたプロジェクトを販売しました。<br>
-                  このプロジェクトでは特に「異常が発生したときの敵兵士の振る舞い」について注力しました。<br>
-                  初めての海外のマーケットへの販売のためGoogle翻訳を使って商品ページを書いたり提出後のEpic Gamesによる添削等、初めてのことだらけだったので不安も多くありましたが無事に商品ページが公開され実際に購入された通知を受け取ったときは非常に嬉しかったです。
-               </p>
-            </div>
-
-            <div class="link-box">
-               <a href="https://www.youtube.com/watch?v=yC1zUaic0rU&feature=youtu.be">YouTube</a>
-               <a href="https://www.unrealengine.com/marketplace/ja/product/stealth-game-ai-kit">Marketplace</a>
-               <a class="popup-modal-dismiss">Close</a>
-            </div>
-
-         </div><!-- modal-01 End -->
-
-         <div id="modal-02" class="popup-modal mfp-hide">
-
-            <img class="scale-with-grid" src="images/portfolio/modals/PetitCon_8.png" alt="" />
-
-            <div class="description-box">
-               <h4>煩悩を60秒間消し続けるやつ</h4>
-               <p>
-                  Unreal Engine 4にて制作。<br>
-                  <br>
-
-                  【製作日数】<br>
-                  １週間<br>
-
-                  【目標】<br>
-                  1週間以内での制作<br>
-                  アセットを可能な限り自分で用意する（DCCツールやテクスチャツール等の連携）<br>
-                  【説明】<br>
-                  テーマである「60」について「60秒間で何かをする」は早々に決まったので「何かをする」について悩んでいたところ、ちょうどテレビで放送していた警策で肩を叩く場面から着想を得て「修行者から発せられる煩悩を警策で叩く」ゲームに決まりました。<br>
-                  ゲームに登場する襖やグレイマンのポーズについてはBlenderにて作成。襖や畳、縁側に使われているマテリアルはSubstance Designer 5で作成しました。グレイマンのポーズはBlenderアドオンの「UE Tools」を利用したことで非常に短い時間でポーズを作成することが出来ました。
-               </p>
-            </div>
-
-            <div class="link-box">
-               <a href="https://www.youtube.com/watch?v=XYhjCdENbAw">YouTube</a>
-               <a href="http://www.behance.net">Source</a>
-               <a class="popup-modal-dismiss">Close</a>
-            </div>
-
-         </div><!-- modal-02 End -->
-
-         <div id="modal-03" class="popup-modal mfp-hide">
-
-            <img class="scale-with-grid" src="images/portfolio/modals/PetitCon_10.png" alt="" />
-
-            <div class="description-box">
-               <h4>第10回ぷちコン応募作品</h4>
-               <p>
-                  Unreal Engine 4で制作<br>
-                  <br>
-                  【製作日数】<br>
-                  ３日<br>
-                  【目標】<br>
-                  ２～３日以内で作る<br>
-                  【説明】<br>
-                  「ぷち」キャラクターが岩に「ぷちっ」と潰されないようにするゲームにしました。<br>
-                  目標を達成するためゲームに登場するアセットは全てマーケットプレイスにて購入したものやInfinity Bladeアセットを活用しています。これにより目標としていた短い期間での完成を達成することが出来ました。
-               </p>
-            </div>
-
-            <div class="link-box">
-               <a href="https://www.youtube.com/watch?v=XYhjCdENbAw">YouTube</a>
-               <!-- <a href="http://www.behance.net">Source</a> -->
-               <a class="popup-modal-dismiss">Close</a>
-            </div>
-
-         </div><!-- modal-03 End -->
-
-         <div id="modal-04" class="popup-modal mfp-hide">
-
-            <img class="scale-with-grid" src="images/portfolio/modals/PetitCon_12.png" alt="" />
-
-            <div class="description-box">
-               <h4>第12回ぷちコン応募作品</h4>
-               <p>
-                  Unreal Engine 4で制作<br>
-                  <br>
-                  【製作日数】<br>
-                  ２週間<br>
-                  【目標】<br>
-                  ゲームプレイとシーケンサーの連携<br>
-                  【説明】<br>
-                  このぷちコンでは初めてシーケンサーを使用しゲーム開始前の導入ムービーを作成しています。<br>
-                  シーケンサーを用いた字幕表示については資料が見つからなかったためウィジェットブループリントとレベルブループリント、シーケンサーのイベントトラックを活用して字幕表示処理を行いました。ゲームプレイ部分については得点判定処理に少々時間を取られてしまいましたが判定箇所となる５つのボーンそれぞれにコリジョンをアタッチしオーバーラップ処理でベッドとの接触判定を行うようすることで、非常に単純ながらも確実な接触判定を行うことが出来ました。<br>
-                  ラグドールを使ったことで適度なランダム性が生まれ見た目的にも面白く第１２回ぷちコン結果発表会では「気になるゲーム」として紹介して頂きました。
-               </p>
-            </div>
-
-            <div class="link-box">
-               <a href="https://www.youtube.com/watch?v=8aemGDS9e3A">YouTube</a>
-               <a href="https://1drv.ms/u/s!Au-8FqgREBKZiGnhtZVF4eRizjiy">Source</a>
-               <a class="popup-modal-dismiss">Close</a>
-            </div>
-
-         </div><!-- modal-04 End -->
-
-         <div id="modal-05" class="popup-modal mfp-hide">
-
-            <img class="scale-with-grid" src="images/portfolio/modals/PetitCon_13.png" alt="" />
-
-            <div class="description-box">
-               <h4>第13回ぷちコン応募作品</h4>
-               <p>
-                  Unreal Engine 4で制作<br>
-                  <br>
-                  【製作日数】<br>
-                  １ヶ月<br>
-
-                  【目標】<br>
-                  ゲームプレイとシーケンサーの連携<br>
-                  アーケードスタイルなゲームプレイ<br>
-                  【説明】<br>
-                  この作品は２０年ほど前によく遊んでいたアーケードスタイルのアクションゲームを参考に制作しました。ゲームの進行は決まった数と種類の敵を倒しきると次のエリアへ進行する「エリアクリア型」です。この進行方法を実現するためサンプルプロジェクトである「Action RPG」を参考にエネミースポナーを作成しました。エネミースポナーはデータドリブンで簡単に敵出現方法をコントロール出来るように心掛けています。<br>
-                  ザコ敵の攻撃についても簡易ではありますが一斉に複数人が攻撃しないよう「攻撃可能枠」の考えを取り入れた制御方法を採用しています。これにより複数人に囲まれて一度に殴られて倒されてしまうような理不尽な要素を排除しています。<br>
-                  ボス敵はアニメーションと攻撃処理の連携に注力しました。「攻撃の予兆」「攻撃」「攻撃後の余韻」といったメリハリを付け、プレイヤーが遊ぶ上で「これからどう動くべきか」を判断しやすくし、各アニメーションに期待される効果（タックル攻撃時には吹き飛ぶ。つかみ攻撃時にはプレイヤーは行動不能になる等）についても納得出来るようにしています。
-               </p>
-            </div>
-
-            <div class="link-box">
-               <a href="https://www.youtube.com/watch?v=RmTpK6tRiZE&feature=emb_title">YouTube</a>
-               <a href="https://1drv.ms/u/s!Au-8FqgREBKZilmreWACqwg8CWWL">Source</a>
-               <a class="popup-modal-dismiss">Close</a>
-            </div>
-
-         </div><!-- modal-05 End -->
-
-         <div id="modal-06" class="popup-modal mfp-hide">
-
-            <img class="scale-with-grid" src="images/portfolio/modals/HTNEditorPlugin.png" alt="" />
-
-            <div class="description-box">
-               <h4>HTNドメイン構築用エディタ</h4>
-               <p>
-                  【製作日数】<br>
-                  2ヶ月ほど<br>
-                  【説明】<br>
-                  エディタ拡張に挑戦してみたかったのでUnreal Engine 4に標準で搭載されている「HTN Planner Plugin」で使用するHTNドメインを構築するためのエディタをBehavior Treeエディタのソースを参考に作りました。
-               </p>
-            </div>
-
-            <div class="link-box">
-               <!-- <a href="http://www.behance.net">YouTube</a> -->
-               <a href="https://github.com/bullyleo/UnrealHTNGraphEditor">Source</a>
-               <a class="popup-modal-dismiss">Close</a>
-            </div>
-
-         </div><!-- modal-07 End -->
-
-         <div id="modal-07" class="popup-modal mfp-hide">
-
-            <img class="scale-with-grid" src="images/portfolio/modals/PrimitiveShooter.png" alt="" />
-
-            <div class="description-box">
-               <h4>PrimitiveShooter</h4>
-               <p>
-                  【製作日数】<br>
-                  1ヶ月（やり直し期間を含めると２ヶ月ほど）<br>
-                  【説明】<br>
-                  この作品を作るまでUE4の主な用途が気になる技術のプロトタイプ実装だったので「そろそろゲームを作らねばなるまい」と思い立ち制作をしました。<br>
-                  この作品ではほとんど触ったことがなかったUMGで敵を倒すたびに増えるコンボ数やコンボ数増加時のアニメーション、敵の位置を知らせるためのインジケーター等を実装しました。ここで知り得た技術は後のぷちコン制作にも活かすことが出来ました。
-               </p>
-            </div>
-
-            <div class="link-box">
-               <a href="https://twitter.com/Dv7Pavilion/status/918810739145457664">Movie</a>
-               <a href="https://paviliondv7.itch.io/primitive-shooter">Download</a>
-               <a class="popup-modal-dismiss">Close</a>
-            </div>
-
-         </div><!-- modal-08 End -->
-
-         <div id="modal-08" class="popup-modal mfp-hide">
-
-            <img class="scale-with-grid" src="images/portfolio/modals/RollingBall.png" alt="" />
-
-            <div class="description-box">
-               <h4>RollingBall</h4>
-               <p>
-                  【製作日数】<br>
-                  5日ほど<br>
-                  【説明】<br>
-                  この作品の１つ前に作成した「Primitive Shooter」が想像以上に時間がかかってしまい挫折しそうになったため「もっと短い時間でゲームを作る」を目標に着手しました。<br>
-                  プレイヤーの操作、ゲームの進行等の仕組み自体は2日で完成したのですが面白いステージが全く思いつかず結果としてステージ制作に時間を多く取られてしまいました。<br>
-               </p>
-            </div>
-
-            <div class="link-box">
-               <!-- <a href="http://www.behance.net">YouTube</a> -->
-               <a href="https://paviliondv7.itch.io/therollingball">Download</a>
-               <a class="popup-modal-dismiss">Close</a>
-            </div>
-
-         </div><!-- modal-08 End -->
-
-         <div id="modal-09" class="popup-modal mfp-hide">
-
-            <img class="scale-with-grid" src="images/portfolio/modals/SimpleAsteroid2D.png" alt="" />
-
-            <div class="description-box">
-               <h4>RollingBall</h4>
-               <p>
-                  【製作日数】<br>
-                  5日ほど<br>
-                  【説明】<br>
-                  「ゲームプログラミングC++」という書籍を読み終え「この本で知り得た知識を自分なりの形で出力したい」という思いから制作を開始しました。<br>
-                  グラフィックスはOpenGL。フレームワークはSDL。サウンドはfmodといくつかライブラリを活用していますがオブジェクト管理、リソース管理、シェーダーを用いたライン描画等、ゲームエンジンによる制作と比べると格段に手間が多いものでしたが楽しんで完成まで持っていくことが出来ました。
-               </p>
-            </div>
-
-            <div class="link-box">
-               <a href="https://twitter.com/Dv7Pavilion/status/1098980336527011840">Movie(Twitter)</a>
-               <a href="https://1drv.ms/u/s!Au-8FqgREBKZiyjZM6pwNHNbGZ5R?e=Ycfpl4">Application</a>
-               <a href="https://1drv.ms/u/s!Au-8FqgREBKZiynXOx9VCQLdiDON?e=Yj90uO">Source</a>
-               <a class="popup-modal-dismiss">Close</a>
-            </div>
-
-         </div><!-- modal-09 End -->
-
-
-      </div> <!-- row End -->
-
-   </section> <!-- Portfolio Section End-->
-
-
-   <!-- Contact Section
-   ================================================== -->
-   <section id="contact">
-
-      <div class="row section-head">
-
-         <h1 style="text-align: center; font-size: 50px; margin-bottom: 30px;">CONTACT</h1>
-
-         <div style="text-align: center; margin-bottom: -20px;">
-            お問い合わせは以下のメールアドレスもしくはTwitterのDMにお願い致します<br>
-
-            <div style="font-size: 3em; margin-top: 50px;">okihurisennsyu@gmail.com</div>
-            <div style="font-size: 2em;">OR</div>
-            <ul class="social">
-               <li><a href="https://twitter.com/Dv7Pavilion"><i class="fa fa-twitter"></i></a></li>
-            </ul>
-         </div>
-
-      </div>
-
-   </section> <!-- Contact Section End-->
-
-   <!-- footer
-   ================================================== -->
-   <footer>
-
-      <div class="row">
-
-         <div class="twelve columns">
-
-            <ul class="social-links">
-               <li><a href="https://twitter.com/Dv7Pavilion"><i class="fa fa-twitter"></i></a></li>
-               <li><a href="https://qiita.com/Dv7Pavilion">
-                  <span class="fa-stack" style="color:#4cb10d; font-size:small">
-                     <i class="fa fa-square fa-stack-2x"></i>
-                     <i class="fa fa-search fa-stack-1x fa-inverse fa-2x"></i>
-                  </span>
-               </a></li>
-            <li><a href="https://paviliondv7.hatenablog.com"><i class="fa fa-pencil-square-o"></i></i></a></li>
-            </ul>
-
-            <ul class="copyright">
-               <li>&copy; Copyright 2020 PavilionDV7</li>
-               <li>Design by <a title="Styleshout" href="http://www.styleshout.com/">Styleshout</a></li>
-            </ul>
-
-         </div>
-
-         <div id="go-top"><a class="smoothscroll" title="Back to Top" href="#home"><i class="icon-up-open"></i></a>
-         </div>
-
-      </div>
-
-   </footer> <!-- Footer End-->
-
-   <!-- Java Script
-   ================================================== -->
-   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-   <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
-   <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
-
-   <script src="js/jquery.flexslider.js"></script>
-   <script src="js/waypoints.js"></script>
-   <script src="js/jquery.fittext.js"></script>
-   <script src="js/magnific-popup.js"></script>
-   <script src="js/init.js"></script>
+	<nav class="navbar sticky-top navbar-expand-md p-1">
+		<a></a> <!-- トグルボタンを右寄せにするため -->
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04"
+			aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+	
+		<div class="collapse navbar-collapse justify-content-sm-center" id="navbarsExample04">
+			<ul class="navbar-nav text-sm-right">
+				<li class="nav-item mx-1"><a class="nav-link" href="index.html">Home</a></li>
+				<li class="nav-item mx-1"><a class="nav-link " href="portfolio.html">Portfolio</a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<div class="container-fluid">
+		<div class="cover-container mx-auto">
+			<div class="main-contents">
+				<h1>自己紹介</h1>
+				<div class="main-contents-desc">
+					はじめまして。PavilionDV7と申します。<br>
+					Unreal Engine 4を主軸にゲーム制作、または関心の強いゲームAIについての実装・実験をしています。作品についてはPortfolioページにまとまっているので是非ご覧ください。<br>
+					<br>
+					制作以外にも制作/実験過程で知り得た情報は積極的にブログにて公開しています。ページ下部に各ブログへのリンクを貼っていますので、こちらも見ていただけると幸いです。
+				</div>
+
+				<h1>スキル</h1>
+				<div class="main-contents-desc">
+					<div class="col p-0">
+						<div class="row-lg-4 pt-4 pb-4 border-bottom">
+							<div class="row">
+								<div class="col-lg-4 align-middle" style="white-space: nowrap;"><h3>Unreal Engine 4</h3></div>
+								<div class="col-lg-3 align-middle pl-5"><span class="star-rating" data-rate="5"></span></div>
+							</div>
+							<p> 
+								基本的な操作に加えUnreal C++を使ったゲームロジックの構築、新しいノードの追加とSlateを利用したエディタ拡張まで経験があります。<br>
+								UE4を利用したマルチプレイゲームについてはUdemyの講座を参考に制作した程度です。
+							</p>
+						</div>
+
+						<div class="row-lg-4 pt-4 pb-4 border-bottom">
+							<div class="row">
+								<div class="col-lg-4 align-middle" style="white-space: nowrap;"><h3>OpenGL + SDL</h3></div>
+								<div class="col-lg-3 align-middle pl-5"><span class="star-rating" data-rate="3"></span></div>
+							</div>
+							<p>
+								参考書を写経。その後、簡素な線描画による2Dシューティングゲームを自作した程度です。
+							</p>
+						</div>
+
+						<div class="row-lg-4 pt-4 pb-4 border-bottom">
+							<div class="row">
+								<div class="col-lg-4 align-middle" style="white-space: nowrap;"><h3>HTML + Boostrap 4</h3></div>
+								<div class="col-lg-3 align-middle pl-5"><span class="star-rating" data-rate="2"></span></div>
+							</div>
+							<p>
+								ネット上にあるサンプルを改変しサイト構築出来る程度の知識があります。<br>
+								このサイトもBoostrapのサンプルページをベースに作成しました。
+							</p>
+						</div>
+					</div>
+				</div>
+
+
+				<h1>ブログ</h1>
+				<div class="row main-contents-desc">
+					<div class="col-lg-3"> はてなブログ </div>
+					<div class="col-lg-4"><a href="https://paviliondv7.hatenablog.com" target="_brank" rel="noopener">https://paviliondv7.hatenablog.com</a></div>
+					<div class="w-100 pb-2"></div>
+					<div class="col-lg-3"> Qiita </div>
+					<div class="col-lg-4"><a href="https://qiita.com/Dv7Pavilion" target="_brank" rel="noopener">https://qiita.com/Dv7Pavilion</a></div>
+				</div>
+
+				
+				<h1>コンタクト</h1>
+				<div class="row main-contents-desc">
+					<div class="col-lg-3"> メール </div>
+					<div class="col-lg-4"><a href="mailto:tanaka7yukio@gmail.com">tanaka7yukio@gmail.com</a></div>
+					<div class="w-100 pb-2"></div>
+					<div class="col-lg-3 "> Twitter </div>
+					<div class="col-lg-4"><a href="https://twitter.com/Dv7Pavilion" target="_brank" rel="noopener">@Dv7Pavilion</a></div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"
+		integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+		integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+		crossorigin="anonymous"></script>
+
+	<script>
+		$(".navbar-nav li a").each(function() {
+			var target = $(this).attr('href');
+			if(location.href.match(target)) {
+				$(this).parent().addClass('active');
+			} else {
+				$(this).parent().removeClass('active');
+			}
+		});
+	</script>
 
 </body>
 
