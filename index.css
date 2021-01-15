@@ -13,7 +13,7 @@
 }
 
 .cover-container h3 {
-	color: #094067da;
+	color: #175988;
 }
 
 
@@ -37,7 +37,6 @@
 	display: inline-block;
     color: #a7a7a7;
 	font-size: 1.3em;
-	/* top: -10px; */
 }
 
 .star-rating:before, .star-rating:after{
@@ -50,12 +49,12 @@
     top: 0;
     left: 0;
     overflow: hidden;
-	color: #008cff; /* イエローカラー 自由に設定化 */
+	color: #008cff;
 }
 
-.star-rating[data-rate="0"]:after{ width: 0%; } /* 星0 */
-.star-rating[data-rate="1"]:after{ width: 20%; } /* 星1 */
-.star-rating[data-rate="2"]:after{ width: 40%; } /* 星2 */
-.star-rating[data-rate="3"]:after{ width: 60%; } /* 星3 */
-.star-rating[data-rate="4"]:after{ width: 80%; } /* 星4 */
-.star-rating[data-rate="5"]:after{ width: 100%; } /* 星5 */
+.star-rating[data-rate="0"]:after{ width: 0%; }
+.star-rating[data-rate="1"]:after{ width: 20%; }
+.star-rating[data-rate="2"]:after{ width: 40%; }
+.star-rating[data-rate="3"]:after{ width: 60%; }
+.star-rating[data-rate="4"]:after{ width: 80%; }
+.star-rating[data-rate="5"]:after{ width: 100%; }
