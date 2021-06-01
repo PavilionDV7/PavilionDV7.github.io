@@ -1,854 +1,853 @@
-<!doctype html>
-<html lang="ja">
+<!DOCTYPE html>
+<html>
 
-<!-- TODO: リンク先の確認 -->
+	<head>
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"			integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+		<link rel="stylesheet" href="common.css">
+		<link rel="stylesheet" href="style.css">
 
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="apple-touch-icon" type="image/png" href="/apple-touch-icon-180x180.png">
+		<link rel="icon" type="image/png" href="/icon-192x192.png">
 
-	<!-- CSS読み込み -->
-	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-	<link rel="stylesheet" href="common.css">
-	<link rel="stylesheet" href="portfolio.css">
+	</head>
 
-	<link rel="apple-touch-icon" type="image/png" href="/apple-touch-icon-180x180.png">
-	<link rel="icon" type="image/png" href="/icon-192x192.png">
+	<body>
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3h56lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+			crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+			crossorigin="anonymous"></script>
 
-	<title>PavilionDV7's Portfolio</title>
-</head>
-
-<body>
-
-	<nav class="navbar sticky-top navbar-expand-md navbar-light p-1">
-		<a></a> <!-- トグルボタンを右寄せにするため -->
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04"
-			aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon" style="background-color: gray;"></span>
-		</button>
-
-		<div class="collapse navbar-collapse justify-content-sm-center" id="navbarsExample04">
-			<ul class="navbar-nav text-sm-right">
-				<li class="nav-item mx-1"><a class="nav-link" href="index.html">Home</a></li>
-				<li class="nav-item mx-1"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
-			</ul>
-		</div>
-	</nav>
-
-	<div class="container marketing">
-		<h1 class="text-center p-4" style="font-size: 60px; font-weight: 600;">ゲーム</h1>
-		<div class="row justify-content-center pb-5 mb-3 border-bottom">
-			<!-- コンテンツ -->
-			<p>
-			<div class="col-lg-4">
-				<img src="img/portfolio/PetitCon8/thumbnail.png" class="content-thumbnail">
-				<h3>煩悩を60秒間消し続けるやつ</h3>
-				<p>第8回ぷちコン応募作品</p>
-				<p><button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#petit1">View details</button></p>
+		<nav class="navbar sticky-top navbar-expand-lg navbar-light" style="background-color:#e3f2fd; padding:0;">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="margin: 15px;"><span class="navbar-toggler-icon"></span></button>
+			<a class="navbar-brand"></a>
+			<div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+				<ul class="navbar-nav justify-content-between w-25">
+					<li class="nav-item"><a class="nav-link" href="index.html"><h2>HOME</h2></a></li>
+					<li class="nav-item active"><a class="nav-link" href="portfolio.html"><h2>PORTFOLIO</h2></a></li>
+				</ul>
 			</div>
+		</nav>
 
-			<div class="modal fade" id="petit1" tabindex="-1" role="dialog" aria-labelledby="petitTitle"
-				aria-hidden="true">
-				<div class="modal-dialog modal-lg" role="document">
-					<div class="modal-content border-0">
-						<div>
-							<div id="petitIndicator_1" class="carousel slide" data-ride="carousel"
-								data-interval="false">
-								<div class="carousel-inner">
-									<div class="carousel-item active"><img src="img/portfolio/PetitCon8/1.png"
-											width="100%" height="100%"></div>
-									<div class="carousel-item"><img src="img/portfolio/PetitCon8/2.png"
-											width="100%" height="100%"></div>
-								</div>
-								<a class="carousel-control-prev" href="#petitIndicator_1" role="button"
-									data-slide="prev">
-									<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-									<span class="sr-only">Previous</span>
-								</a>
-								<a class="carousel-control-next" href="#petitIndicator_1" role="button"
-									data-slide="next">
-									<span class="carousel-control-next-icon" aria-hidden="true"></span>
-									<span class="sr-only">Next</span>
-								</a>
-							</div>
-						</div>
-						<div class="modal-header">
-							<h5 class="modal-title" id="petitTitle">第8回ぷちコン応募作品「煩悩を60秒間消し続けるやつ」</h5>
-						</div>
-						<div class="modal-body">
-							【使用エンジン】<br>
-							Unreal Engine 4<br><br>
+		<div class="container">
+			<div class="row" style="margin-left: 0; margin-right: 0;">
 
-							【製作日数】<br>
-							１週間<br><br>
-		  
-							【目標】<br>
-							1週間以内での制作<br>
-							アセットを可能な限り自分で用意する（DCCツールやテクスチャツール等の連携）<br><br>
-							【説明】<br>
-							テーマである「60」について「60秒間で何かをする」は早々に決まったので「何かをする」について悩んでいたところ、ちょうどテレビで放送していた警策で肩を叩く場面から着想を得て「修行者から発せられる煩悩を警策で叩く」ゲームに決まりました。<br>
-							ゲームに登場する襖やグレイマンのポーズについてはBlenderにて作成。襖や畳、縁側に使われているマテリアルはSubstance Designer 5で作成しました。グレイマンのポーズはBlenderアドオンの「UE Tools」を利用したことで非常に短い時間でポーズを作成することが出来ました。
-						</div>
-						<div class="modal-footer">
-							<a href="https://www.youtube.com/watch?v=XYhjCdENbAw" target="_brank"><button type="button" class="btn btn-primary">Youtube</button></a>
-							<a href="https://1drv.ms/u/s!Au-8FqgREBKZjRQrW145z2jW6wA0?e=zzPzuU" target="_brank" ><button type="button" class="btn btn-primary">実行ファイル(.exe)</button></a>
-							<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-						</div>
-					</div>
-				</div>
-			</div>
-			</p>
-			<!-- ここまで -->
+				<div class="col-md-6 col-lg-4" style="margin-top: 50px;">
+					<div class="card shadow-sm">
+						<img src="img/portfolio/PetitCon8/thumbnail.png" class="card-img-top">
+						<div class="card-body">
+							<h4 class="card-title">煩悩を60秒間消し続けるやつ</h4>
+							<h6 class="card-subtitle text-muted">第8回ぷちコン応募作品</h6>
+							<p class="card-text"></p>
 
-			<!-- コンテンツ -->
-			<p>
-				<div class="col-lg-4">
-					<img src="img/portfolio/PetitCon10/thumbnail.png" class="content-thumbnail">
-					<h3>PETIT RUUUUUN!!</h3>
-					<p>第10回ぷちコン応募作品</p>
-					<p><button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#petit2">View details</button></p>
-				</div>
-	
-				<div class="modal fade" id="petit2" tabindex="-1" role="dialog" aria-labelledby="petitTitle"
-					aria-hidden="true">
-					<div class="modal-dialog modal-lg" role="document">
-						<div class="modal-content border-0">
-							<div>
-								<div id="petitIndicator_2" class="carousel slide" data-ride="carousel"
-									data-interval="false">
-									<div class="carousel-inner">
-										<div class="carousel-item active"><img src="img/portfolio/PetitCon10/1.png"
-												width="100%" height="100%"></div>
-										<div class="carousel-item"><img src="img/portfolio/PetitCon10/2.png"
-												width="100%" height="100%"></div>
-										<div class="carousel-item"><img src="img/portfolio/PetitCon10/3.png"
-												width="100%" height="100%"></div>
+							<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal1">View Detail</button>
+							<div class="modal fade" data-backdrop="true" id="modal1" tabindex="-1" role="dialog" aria-labelledby="label1" aria-hidden="true">
+								<div class="modal-dialog modal-lg" role="document">
+									<div class="modal-content">
+
+										<div id="carouselControls1" class="carousel slide" data-ride="carousel">
+											<div class="carousel-inner">
+												<div class="carousel-item active">
+													<img src="img/portfolio/PetitCon8/1.png" class="d-block w-100">
+												</div>
+												<div class="carousel-item">
+													<img src="img/portfolio/PetitCon8/2.png" class="d-block w-100">
+												</div>
+											</div>
+											<a class="carousel-control-prev" href="#carouselControls1" role="button" data-slide="prev">
+												<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+											</a>
+											<a class="carousel-control-next" href="#carouselControls1" role="button" data-slide="next">
+												<span class="carousel-control-next-icon" aria-hidden="true"></span>
+											</a>
+										</div>
+
+										<div class="modal-header">
+											<h4 class="modal-title" id="label1"> 第8回ぷちコン応募作品「煩悩を60秒間消し続けるやつ」</h4>
+										</div>
+										<div class="modal-body">
+											<p>
+											<h5>【使用エンジン】</h5>
+											Unreal Engine 4
+											</p>
+											<p>
+											<h5>【製作日数】</h5>
+											１週間
+											</p>
+											<p>
+											<h5>【説明】</h5>
+											1週間以内での制作とアセットを可能な限り自分で用意する（DCCツールやテクスチャツール等の連携）ことを目標にして制作しました。
+											<br>
+											テーマである「60」について「60秒間で何かをする」は早々に決まったので「何かをする」について悩んでいたところ、ちょうどテレビで放送していた警策で肩を叩く場面から着想を得て「修行者から発せられる煩悩を警策で叩く」ゲームに決まりました。
+											ゲームに登場する襖やグレイマンのポーズについてはBlenderにて作成。襖や畳、縁側に使われているマテリアルはSubstance
+											Designer
+											5で作成しました。グレイマンのポーズはBlenderアドオンの「UE
+											Tools」を利用したことで非常に短い時間でポーズを作成することが出来ました。
+											</p>
+										</div>
+										<div class="modal-footer">
+											<a href="https://www.youtube.com/watch?v=XYhjCdENbAw" target="_brank" rel="noopener"><button type="button" class="btn btn-primary">Youtube</button></a>
+											<a href="https://1drv.ms/u/s!Au-8FqgREBKZjRQrW145z2jW6wA0?e=zzPzuU" target="_brank" rel="noopener"><button type="button" class="btn btn-primary">実行ファイル</button></a>
+											<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+										</div>
 									</div>
-									<a class="carousel-control-prev" href="#petitIndicator_2" role="button"
-										data-slide="prev">
-										<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-										<span class="sr-only">Previous</span>
-									</a>
-									<a class="carousel-control-next" href="#petitIndicator_2" role="button"
-										data-slide="next">
-										<span class="carousel-control-next-icon" aria-hidden="true"></span>
-										<span class="sr-only">Next</span>
-									</a>
 								</div>
-							</div>
-							<div class="modal-header">
-								<h5 class="modal-title" id="petitTitle">第10回ぷちコン応募作品「PETIT RUUUUUN!!」</h5>
-							</div>
-							<div class="modal-body">
-							【使用エンジン】<br>
-							Unreal Engine 4<br><br>
-							【製作日数】<br>
-							３日<br><br>
-							【目標】<br>
-							２～３日以内で作る<br><br>
-							【説明】<br>
-							「ぷち」キャラクターが岩に「ぷちっ」と潰されないようにするゲームにしました。<br>
-							目標を達成するためゲームに登場するアセットは全てマーケットプレイスにて購入したものやInfinity Bladeアセットを活用しています。これにより目標としていた短い期間での完成を達成することが出来ました。
-							</div>
-							<div class="modal-footer">
-								<a href="https://youtu.be/qrWi-8sQ--8" target="_brank"><button type="button" class="btn btn-primary">Youtube</button></a>
-								<a href="https://1drv.ms/u/s!Au-8FqgREBKZjRWUt487pBKA_quY?e=GbjL7j" target="_brank"><button type="button" class="btn btn-primary">実行ファイル(.exe)</button></a>
-
-								<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
 							</div>
 						</div>
 					</div>
 				</div>
-			</p>
-			<!-- ここまで -->
 
-			<!-- コンテンツ -->
-			<p>
-				<div class="col-lg-4">
-					<img src="img/portfolio/PetitCon12/thumbnail.png" class="content-thumbnail">
-					<h3>LAY ～ofuton ni dive～</h3>
-					<p>第12回ぷちコン応募作品</p>
-					<p><button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#petit3">View details</button></p>
-				</div>
-	
-				<div class="modal fade" id="petit3" tabindex="-1" role="dialog" aria-labelledby="petitTitle"
-					aria-hidden="true">
-					<div class="modal-dialog modal-lg" role="document">
-						<div class="modal-content border-0">
-							<div>
-								<div id="petitIndicator_3" class="carousel slide" data-ride="carousel"
-									data-interval="false">
-									<div class="carousel-inner">
-										<div class="carousel-item active"><img src="img/portfolio/PetitCon12/1.png"
-												width="100%" height="100%"></div>
-										<div class="carousel-item"><img src="img/portfolio/PetitCon12/2.png"
-												width="100%" height="100%"></div>
-										<div class="carousel-item"><img src="img/portfolio/PetitCon12/3.png"
-												width="100%" height="100%"></div>
-										<div class="carousel-item"><img src="img/portfolio/PetitCon12/4.png"
-												width="100%" height="100%"></div>
+				<div class="col-md-6 col-lg-4" style="margin-top: 50px;">
+					<div class="card shadow-sm">
+						<img src="img/portfolio/PetitCon10/thumbnail.png" class="card-img-top">
+						<div class="card-body">
+							<h4 class="card-title">PETIT RUUUUUN!!</h4>
+							<h6 class="card-subtitle text-muted">第10回ぷちコン応募作品</h6>
+							<p class="card-text"></p>
+
+							<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal2">View Detail</button>
+							<div class="modal fade" data-backdrop="true" id="modal2" tabindex="-1" role="dialog" aria-labelledby="label1" aria-hidden="true">
+								<div class="modal-dialog modal-lg" role="document">
+									<div class="modal-content">
+
+										<div id="carouselControls2" class="carousel slide" data-ride="carousel">
+											<div class="carousel-inner">
+												<div class="carousel-item active">
+													<img src="img/portfolio/PetitCon10/1.png" class="d-block w-100">
+												</div>
+												<div class="carousel-item">
+													<img src="img/portfolio/PetitCon10/2.png" class="d-block w-100">
+												</div>
+												<div class="carousel-item">
+													<img src="img/portfolio/PetitCon10/3.png" class="d-block w-100">
+												</div>
+											</div>
+											<a class="carousel-control-prev" href="#carouselControls2" role="button" data-slide="prev">
+												<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+											</a>
+											<a class="carousel-control-next" href="#carouselControls2" role="button" data-slide="next">
+												<span class="carousel-control-next-icon" aria-hidden="true"></span>
+											</a>
+										</div>
+
+										<div class="modal-header">
+											<h4 class="modal-title" id="label1">第10回ぷちコン応募作品「PETIT RUUUUUN!!」</h4>
+										</div>
+										<div class="modal-body">
+											<p>
+											<h5>【使用エンジン】</h5>
+											Unreal Engine 4
+											</p>
+											<p>
+											<h5>【製作日数】</h5>
+											3日間
+											</p>
+											<p>
+											<h5>【説明】</h5>
+											短い期間(2~3日)で完成させることを目標にして制作しました。
+											<br>
+											「ぷち」キャラクターが岩に「ぷちっ」と潰されないようにするゲームにしました。目標を達成するためゲームに登場するアセットは全てマーケットプレイスにて購入したものやInfinity
+											Bladeアセットを活用しています。これにより目標としていた短い期間での完成を達成することが出来ました。
+											</p>
+										</div>
+										<div class="modal-footer">
+											<a href="https://youtu.be/qrWi-8sQ--8" target="_brank" rel="noopener"><button type="button" class="btn btn-primary">Youtube</button></a>
+											<a href="https://1drv.ms/u/s!Au-8FqgREBKZjRWUt487pBKA_quY?e=GbjL7j" target="_brank" rel="noopener"><button type="button" class="btn btn-primary">実行ファイル</button></a>
+											<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+										</div>
 									</div>
-									<a class="carousel-control-prev" href="#petitIndicator_3" role="button"
-										data-slide="prev">
-										<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-										<span class="sr-only">Previous</span>
-									</a>
-									<a class="carousel-control-next" href="#petitIndicator_3" role="button"
-										data-slide="next">
-										<span class="carousel-control-next-icon" aria-hidden="true"></span>
-										<span class="sr-only">Next</span>
-									</a>
 								</div>
-							</div>
-							<div class="modal-header">
-								<h5 class="modal-title" id="petitTitle">第12回ぷちコン応募作品「LAY ～ofuton ni dive～」</h5>
-							</div>
-							<div class="modal-body">
-								【使用エンジン】<br>
-								Unreal Engine 4<br><br>
-								【製作日数】<br>
-								２週間<br><br>
-								【目標】<br>
-								ゲームプレイとシーケンサーの連携<br><br>
-								【説明】<br>
-								このぷちコンでは初めてシーケンサーを使用しゲーム開始前の導入ムービーを作成しています。<br>
-								シーケンサーを用いた字幕表示については資料が見つからなかったためウィジェットブループリントとレベルブループリント、シーケンサーのイベントトラックを活用して字幕表示処理を行いました。ゲームプレイ部分については得点判定処理に少々時間を取られてしまいましたが判定箇所となる５つのボーンそれぞれにコリジョンをアタッチしオーバーラップ処理でベッドとの接触判定を行うようすることで、非常に単純ながらも確実な接触判定を行うことが出来ました。<br>
-								ラグドールを使ったことで適度なランダム性が生まれ見た目的にも面白く第１２回ぷちコン結果発表会では「気になるゲーム」として紹介して頂きました。
-							</div>
-							<div class="modal-footer">
-								<a href="https://www.youtube.com/watch?v=8aemGDS9e3A" target="_brank"><button type="button" class="btn btn-primary">Youtube</button></a>
-								<a href="https://1drv.ms/u/s!Au-8FqgREBKZilBAUyaFlVo1GoCX?e=fRnm48" target="_brank"><button type="button" class="btn btn-primary">実行ファイル(.exe)</button></a>
-								<a href="https://1drv.ms/u/s!Au-8FqgREBKZiGnhtZVF4eRizjiy" target="_brank"><button type="button" class="btn btn-primary">ソースコード</button></a>
-								<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
 							</div>
 						</div>
 					</div>
 				</div>
-			</p>
-			<!-- ここまで -->
 
+				<div class="col-md-6 col-lg-4" style="margin-top: 50px;">
+					<div class="card shadow-sm">
+						<img src="img/portfolio/PetitCon12/thumbnail.png" class="card-img-top">
+						<div class="card-body">
+							<h4 class="card-title">LAY ～ofuton ni dive～</h4>
+							<h6 class="card-subtitle text-muted">第12回ぷちコン応募作品</h6>
+							<p class="card-text"></p>
 
-			<!-- コンテンツ -->
-			<p>
-			<div class="col-lg-4">
-				<img src="img/portfolio/PetitCon13/thumbnail.png" class="content-thumbnail">
-				<h3>サクラサク</h3>
-				<p>第13回ぷちコン応募作品</p>
-				<p><button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#petit4">View
-						details</button></p>
-			</div>
-			
-			<div class="modal fade" id="petit4" tabindex="-1" role="dialog" aria-labelledby="petitTitle" aria-hidden="true">
-				<div class="modal-dialog modal-lg" role="document">
-					<div class="modal-content border-0">
-						<div>
-							<div id="petitIndicator_4" class="carousel slide" data-ride="carousel" data-interval="false">
-								<div class="carousel-inner">
-									<div class="carousel-item active"><img src="img/portfolio/PetitCon13/1.png"
-											width="100%" height="100%"></div>
-									<div class="carousel-item"><img src="img/portfolio/PetitCon13/2.png"
-											width="100%" height="100%"></div>
-									<div class="carousel-item"><img src="img/portfolio/PetitCon13/3.png"
-											width="100%" height="100%"></div>
-									<div class="carousel-item"><img src="img/portfolio/PetitCon13/4.png"
-											width="100%" height="100%"></div>
-								</div>
-								<a class="carousel-control-prev" href="#petitIndicator_4" role="button" data-slide="prev">
-									<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-									<span class="sr-only">Previous</span>
-								</a>
-								<a class="carousel-control-next" href="#petitIndicator_4" role="button" data-slide="next">
-									<span class="carousel-control-next-icon" aria-hidden="true"></span>
-									<span class="sr-only">Next</span>
-								</a>
-							</div>
-						</div>
-						<div class="modal-header">
-							<h5 class="modal-title" id="petitTitle">第13回ぷちコン応募作品「サクラサク」</h5>
-						</div>
-						<div class="modal-body">
-							【使用エンジン】<br>
-							Unreal Engine 4<br><br>
-							【製作日数】<br>
-							１ヶ月<br><br>
-							【目標】<br>
-							ゲームプレイとシーケンサーの連携<br>
-							アーケードスタイルなゲームプレイ<br><br>
-							【説明】<br>
-							この作品は２０年ほど前によく遊んでいたアーケードスタイルのアクションゲームを参考に制作しました。ゲームの進行は決まった数と種類の敵を倒しきると次のエリアへ進行する「エリアクリア型」です。この進行方法を実現するためサンプルプロジェクトである「Action RPG」を参考にエネミースポナーを作成しました。エネミースポナーはデータドリブンで簡単に敵出現方法をコントロール出来るように心掛けています。<br>
-							ザコ敵の攻撃についても簡易ではありますが一斉に複数人が攻撃しないよう「攻撃可能枠」の考えを取り入れた制御方法を採用しています。これにより複数人に囲まれて一度に殴られて倒されてしまうような理不尽な要素を排除しています。<br>
-							ボス敵はアニメーションと攻撃処理の連携に注力しました。「攻撃の予兆」「攻撃」「攻撃後の余韻」といったメリハリを付け、プレイヤーが遊ぶ上で「これからどう動くべきか」を判断しやすくし、各アニメーションに期待される効果（タックル攻撃時には吹き飛ぶ。つかみ攻撃時にはプレイヤーは行動不能になる等）についても納得出来るようにしています。
-						</div>
-						<div class="modal-footer">
-							<a href="https://youtu.be/RmTpK6tRiZE" target="_brank"><button type="button"
-								class="btn btn-primary">Youtube</button></a>
-							<a href="https://1drv.ms/u/s!Au-8FqgREBKZik98qGcArSnOGyZZ?e=NjvlXr" target="_brank"><button type="button"
-								class="btn btn-primary">実行ファイル(.exe)</button></a>
-							<a href="https://1drv.ms/u/s!Au-8FqgREBKZilmreWACqwg8CWWL" target="_brank"><button type="button"
-								class="btn btn-primary">ソースコード</button></a>
-							<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-						</div>
-					</div>
-				</div>
-			</div>
-			</p>
-			<!-- ここまで -->
+							<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal3">View Detail</button>
+							<div class="modal fade" data-backdrop="true" id="modal3" tabindex="-1" role="dialog" aria-labelledby="label1" aria-hidden="true">
+								<div class="modal-dialog modal-lg" role="document">
+									<div class="modal-content">
 
+										<div id="carouselControls3" class="carousel slide" data-ride="carousel">
+											<div class="carousel-inner">
+												<div class="carousel-item active">
+													<img src="img/portfolio/PetitCon12/1.png" class="d-block w-100">
+												</div>
+												<div class="carousel-item">
+													<img src="img/portfolio/PetitCon12/2.png" class="d-block w-100">
+												</div>
+												<div class="carousel-item">
+													<img src="img/portfolio/PetitCon12/3.png" class="d-block w-100">
+												</div>
+											</div>
+											<a class="carousel-control-prev" href="#carouselControls3" role="button" data-slide="prev">
+												<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+											</a>
+											<a class="carousel-control-next" href="#carouselControls3" role="button" data-slide="next">
+												<span class="carousel-control-next-icon" aria-hidden="true"></span>
+											</a>
+										</div>
 
-			<!-- コンテンツ -->
-			<p>
-			<div class="col-lg-4">
-				<img src="img/portfolio/PetitCon14/thumbnail.png" class="content-thumbnail">
-				<h3>GET OUT OF THE BEACH !</h3>
-				<p>第14回ぷちコン応募作品</p>
-				<p><button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#petit5">View
-						details</button></p>
-			</div>
-			
-			<div class="modal fade" id="petit5" tabindex="-1" role="dialog" aria-labelledby="petitTitle" aria-hidden="true">
-				<div class="modal-dialog modal-lg" role="document">
-					<div class="modal-content border-0">
-						<div>
-							<div id="petitIndicator_5" class="carousel slide" data-ride="carousel" data-interval="false">
-								<div class="carousel-inner">
-									<div class="carousel-item active"><img src="img/portfolio/PetitCon14/1.png"
-											width="100%" height="100%"></div>
-									<div class="carousel-item"><img src="img/portfolio/PetitCon14/2.png" width="100%"
-											height="100%"></div>
-									<div class="carousel-item"><img src="img/portfolio/PetitCon14/3.png" width="100%"
-											height="100%"></div>
-									<div class="carousel-item"><img src="img/portfolio/PetitCon14/4.png" width="100%"
-											height="100%"></div>
-								</div>
-								<a class="carousel-control-prev" href="#petitIndicator_5" role="button" data-slide="prev">
-									<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-									<span class="sr-only">Previous</span>
-								</a>
-								<a class="carousel-control-next" href="#petitIndicator_5" role="button" data-slide="next">
-									<span class="carousel-control-next-icon" aria-hidden="true"></span>
-									<span class="sr-only">Next</span>
-								</a>
-							</div>
-						</div>
-						<div class="modal-header">
-							<h5 class="modal-title" id="petitTitle">第14回ぷちコン応募作品「GET OUT OF THE BEACH !」</h5>
-						</div>
-						<div class="modal-body">
-							【使用エンジン】<br>
-							Unreal Engine 4<br><br>
-							【製作日数】<br>
-							１ヶ月<br><br>
-							【説明】<br>
-							
-						</div>
-						<div class="modal-footer">
-							<a href="https://youtu.be/cTEspbcbv1Y" target="_brank"><button type="button"
-								class="btn btn-primary">Youtube</button></a>
-							<a href="https://1drv.ms/u/s!Au-8FqgREBKZi3sYqG3fqX7U2bBK?e=d0CY2h" target="_brank"><button type="button"
-								class="btn btn-primary">実行ファイル(.exe)</button></a>
-							<a href="https://1drv.ms/u/s!Au-8FqgREBKZi3sYqG3fqX7U2bBK?e=Xu53H9" target="_brank"><button type="button"
-								class="btn btn-primary">ソースコード</button></a>
-							<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-						</div>
-					</div>
-				</div>
-			</div>
-			</p>
-			<!-- ここまで -->
-
-
-			<!-- コンテンツ -->
-			<p>
-			<div class="col-lg-4">
-				<img src="img/portfolio/ue4fest_gamejam/thumbnail.png" class="content-thumbnail">
-				<h3>SHEEP DOG!!</h3>
-				<p>UE4 Fest X ゲームジャム 応募作品</p>
-				<p><button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#petit6">View
-						details</button></p>
-			</div>
-			
-			<div class="modal fade" id="petit6" tabindex="-1" role="dialog" aria-labelledby="petitTitle" aria-hidden="true">
-				<div class="modal-dialog modal-lg" role="document">
-					<div class="modal-content border-0">
-						<div>
-							<div id="petitIndicator_6" class="carousel slide" data-ride="carousel" data-interval="false">
-								<div class="carousel-inner">
-									<div class="carousel-item active"><img src="img/portfolio/ue4fest_gamejam/1.png" width="100%"
-											height="100%"></div>
-									<div class="carousel-item"><img src="img/portfolio/ue4fest_gamejam/2.png" width="100%" height="100%"></div>
-									<div class="carousel-item"><img src="img/portfolio/ue4fest_gamejam/3.png" width="100%" height="100%"></div>
-									<div class="carousel-item"><img src="img/portfolio/ue4fest_gamejam/4.png" width="100%" height="100%"></div>
-								</div>
-								<a class="carousel-control-prev" href="#petitIndicator_6" role="button" data-slide="prev">
-									<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-									<span class="sr-only">Previous</span>
-								</a>
-								<a class="carousel-control-next" href="#petitIndicator_6" role="button" data-slide="next">
-									<span class="carousel-control-next-icon" aria-hidden="true"></span>
-									<span class="sr-only">Next</span>
-								</a>
-							</div>
-						</div>
-						<div class="modal-header">
-							<h5 class="modal-title" id="petitTitle">UE4 Fest X ゲームジャム応募作品「SHEEP DOG!!」</h5>
-						</div>
-						<div class="modal-body">
-							【使用エンジン】<br>
-							Unreal Engine 4<br><br>
-							【製作日数】<br>
-							48時間<br><br>
-							【説明】<br>
-							短時間での完成を目指すため「実現可能な単純なルール」「過去に購入したアセットを活用する」を最優先事項として制作しました。<br>
-							「逃げた羊を柵の中に集める」というルールを、よりユニークなものへと進化させるため、今回のようなアクションゲームには不向きな「ドラッグをして飛ばす操作」を実装しました。この実装については「制限時間の焦り」、「羊のプレイヤーの反対方向へと動く」仕組みに「ドラッグで飛ばす操作」という操作性の悪さが組み合わさることで「狙った場所にうまく動けない」というもどかしさが生まれ、それがゲームの面白さに寄与すると考えたためです。<br>
-							このゲームにたどり着くまで長い時間悩んでしまったので実質の制作時間は30時間程度でしたが、過去に購入したアセットや制作経験によって適度な規模で面白いゲームを作れたと思います。<br>
-							残念ながら結果発表放送では特に触れられることもなく終わってしまいましたが非常に良い経験ができたと感じています。
-						</div>
-						<div class="modal-footer">
-							<a href="https://www.youtube.com/watch?v=qVccwAIhb8k&feature=emb_title" target="_brank"><button type="button"
-									class="btn btn-primary">Youtube</button></a>
-							<!-- <a href="https://1drv.ms/u/s!Au-8FqgREBKZi3sYqG3fqX7U2bBK?e=d0CY2h" target="_brank"><button
-									type="button" class="btn btn-primary">実行ファイル(.exe)</button></a>
-							<a href="https://1drv.ms/u/s!Au-8FqgREBKZi3sYqG3fqX7U2bBK?e=Xu53H9" target="_brank"><button
-									type="button" class="btn btn-primary">ソースコード</button></a> -->
-							<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-						</div>
-					</div>
-				</div>
-			</div>
-			</p>
-			<!-- ここまで -->
-
-
-			<!-- コンテンツ -->
-			<p>
-				<div class="col-lg-4">
-					<img src="img/portfolio/PetitCon15/thumbnail.png" class="content-thumbnail">
-					<h3>ただいま瞑想中</h3>
-					<p>第15回ぷちコン応募作品</p>
-					<p><button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#petit7">View details</button></p>
-				</div>
-				
-				<div class="modal fade" id="petit7" tabindex="-1" role="dialog" aria-labelledby="petitTitle" aria-hidden="true">
-					<div class="modal-dialog modal-lg" role="document">
-						<div class="modal-content border-0">
-							<div>
-								<div id="petitIndicator_7" class="carousel slide" data-ride="carousel" data-interval="false">
-									<div class="carousel-inner">
-										<div class="carousel-item active"><img src="img/portfolio/PetitCon15/1.png" width="100%" height="100%"></div>
-										<div class="carousel-item"><img src="img/portfolio/PetitCon15/2.png" width="100%" height="100%"></div>
-										<div class="carousel-item"><img src="img/portfolio/PetitCon15/3.png" width="100%" height="100%"></div>
+										<div class="modal-header">
+											<h4 class="modal-title" id="label1">第12回ぷちコン応募作品「LAY ～ofuton ni dive～」</h4>
+										</div>
+										<div class="modal-body">
+											<p>
+											<h5>【使用エンジン】</h5>
+											Unreal Engine 4
+											</p>
+											<p>
+											<h5>【製作日数】</h5>
+											２週間
+											</p>
+											<p>
+											<h5>【説明】</h5>
+											ゲームプレイとシーケンサーの連携を目標にして制作しました。
+											<br>
+											このぷちコンでは初めてシーケンサーを使用しゲーム開始前の導入ムービーを作成しています。<br>シーケンサーを用いた字幕表示については資料が見つからなかったためウィジェットブループリントとレベルブループリント、シーケンサーのイベントトラックを活用して字幕表示処理を行いました。ゲームプレイ部分については得点判定処理に少々時間を取られてしまいましたが判定箇所となる５つのボーンそれぞれにコリジョンをアタッチしオーバーラップ処理でベッドとの接触判定を行うようすることで、非常に単純ながらも確実な接触判定を行うことが出来ました。<br>ラグドールを使ったことで適度なランダム性が生まれ見た目的にも面白く第１２回ぷちコン結果発表会では「気になるゲーム」として紹介して頂きました。
+											</p>
+										</div>
+										<div class="modal-footer">
+											<a href="https://www.youtube.com/watch?v=8aemGDS9e3A" target="_brank" rel="noopener"><button type="button" class="btn btn-primary">Youtube</button></a>
+											<a href="https://1drv.ms/u/s!Au-8FqgREBKZilBAUyaFlVo1GoCX?e=fRnm48" target="_brank" rel="noopener"><button type="button" class="btn btn-primary">実行ファイル</button></a>
+											<a href="https://1drv.ms/u/s!Au-8FqgREBKZiGnhtZVF4eRizjiy" target="_brank" rel="noopener"><button type="button" class="btn btn-primary">ソースコード</button></a>
+											<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+										</div>
 									</div>
-									<a class="carousel-control-prev" href="#petitIndicator_7" role="button" data-slide="prev">
-										<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-										<span class="sr-only">Previous</span>
-									</a>
-									<a class="carousel-control-next" href="#petitIndicator_7" role="button" data-slide="next">
-										<span class="carousel-control-next-icon" aria-hidden="true"></span>
-										<span class="sr-only">Next</span>
-									</a>
 								</div>
-							</div>
-							<div class="modal-header">
-								<h5 class="modal-title" id="petitTitle">第15回ぷちコン応募作品「ただいま瞑想中」</h5>
-							</div>
-							<div class="modal-body">
-								【使用エンジン】<br>
-								Unreal Engine 4<br><br>
-								【製作日数】<br>
-								1週間<br><br>
-								【説明】<br>
-								「かわる」というテーマから「プレイヤーが変わる」「見た目が変わる」「用途が変わる」と様々な案も浮かびましたが「サクッっと作る」ため、案出しの段階で最も詳細にイメージ出来た「変わり身の術でいたずらを回避して仕返しする」ゲームに決定しました。<br>
-								このゲームでは進行にQTEの仕組みを採用してみました。青グレイマンが飛びかかってくるシーケンサー内であるフレーム範囲内でプレイヤーの入力を検知した場合、成功シーケンサーを再生、入力が検知されなかった場合は失敗シーケンサーを再生するようにしています。<br>
-								プログラム量が非常に少ない分、1日や2日で完成するかと考えていましたが、アニメーションとカメラからの写り具合の調整や、パーティクルの調整、変わり身の術後に置かれる幹アセットの作成に多くの時間を取られてしまいました。しかしシーケンサーの取り扱いやアセット作成のワークフローについては非常に勉強になりました。
-							</div>
-							<div class="modal-footer">
-								<a href="https://t.co/dlxAJckpvy?amp=1" target="_brank"><button type="button" class="btn btn-primary">Youtube</button></a>
-								<a href="https://1drv.ms/u/s!Au-8FqgREBKZjWiVvQ-2CL3xFwoU?e=aFSb1f" target="_brank"><button
-										type="button" class="btn btn-primary">実行ファイル(.exe)</button></a>
-								<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
 							</div>
 						</div>
 					</div>
 				</div>
-			</p>
-			<!-- ここまで -->
 
 
-			<!-- コンテンツ -->
-			<p>
-				<div class="col-lg-4">
-					<img src="img/portfolio/UnrealQuest/thumbnail.png" class="content-thumbnail">
-					<h3>ころころボオオオオオオオオオル！</h3>
-					<p>アンリアルクエスト～グレイマンからの5つの挑戦状～ 解答作品</p>
-					<p><button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#unrealquest">View details</button></p>
-				</div>
-				
-				<div class="modal fade" id="unrealquest" tabindex="-1" role="dialog" aria-labelledby="unrealquestTitle" aria-hidden="true">
-					<div class="modal-dialog modal-lg" role="document">
-						<div class="modal-content border-0">
-							<div>
-								<div id="unrealquestIndicator" class="carousel slide" data-ride="carousel" data-interval="false">
-									<div class="carousel-inner">
-										<div class="carousel-item active"><img src="img/portfolio/UnrealQuest/1.png" width="100%"height="100%"></div>
-										<div class="carousel-item"><img src="img/portfolio/UnrealQuest/2.png" width="100%" height="100%"></div>
-										<div class="carousel-item"><img src="img/portfolio/UnrealQuest/3.png" width="100%" height="100%"></div>
-										<div class="carousel-item"><img src="img/portfolio/UnrealQuest/4.png" width="100%" height="100%"></div>
-										<div class="carousel-item"><img src="img/portfolio/UnrealQuest/5.png" width="100%" height="100%"></div>
+				<div class="col-md-6 col-lg-4" style="margin-top: 50px;">
+					<div class="card shadow-sm">
+						<img src="img/portfolio/PetitCon13/thumbnail.png" class="card-img-top">
+						<div class="card-body">
+							<h4 class="card-title">サクラサク</h4>
+							<h6 class="card-subtitle text-muted">第13回ぷちコン応募作品</h6>
+							<p class="card-text"></p>
+
+							<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal4">View Detail</button>
+							<div class="modal fade" data-backdrop="true" id="modal4" tabindex="-1" role="dialog" aria-labelledby="label1" aria-hidden="true">
+								<div class="modal-dialog modal-lg" role="document">
+									<div class="modal-content">
+
+										<div id="carouselControls4" class="carousel slide" data-ride="carousel">
+											<div class="carousel-inner">
+												<div class="carousel-item active">
+													<img src="img/portfolio/PetitCon13/1.png" class="d-block w-100">
+												</div>
+												<div class="carousel-item">
+													<img src="img/portfolio/PetitCon13/2.png" class="d-block w-100">
+												</div>
+												<div class="carousel-item">
+													<img src="img/portfolio/PetitCon13/3.png" class="d-block w-100">
+												</div>
+												<div class="carousel-item">
+													<img src="img/portfolio/PetitCon13/4.png" class="d-block w-100">
+												</div>
+											</div>
+											<a class="carousel-control-prev" href="#carouselControls4" role="button" data-slide="prev">
+												<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+											</a>
+											<a class="carousel-control-next" href="#carouselControls4" role="button" data-slide="next">
+												<span class="carousel-control-next-icon" aria-hidden="true"></span>
+											</a>
+										</div>
+
+										<div class="modal-header">
+											<h4 class="modal-title" id="label1">第13回ぷちコン応募作品「サクラサク」</h4>
+										</div>
+										<div class="modal-body">
+											<p>
+											<h5>【使用エンジン】</h5>
+											Unreal Engine 4
+											</p>
+											<p>
+											<h5>【製作日数】</h5>
+											１ヶ月
+											</p>
+											<p>
+											<h5>【説明】</h5>
+											ゲームプレイとシーケンサーの連携、アーケードスタイルなゲームプレイを目標にして制作しました。
+											<br>
+											この作品は２０年ほど前によく遊んでいたアーケードスタイルのアクションゲームを参考に制作しました。ゲームの進行は決まった数と種類の敵を倒しきると次のエリアへ進行する「エリアクリア型」です。この進行方法を実現するためサンプルプロジェクトである「Action RPG」を参考にエネミースポナーを作成しました。エネミースポナーはデータドリブンで簡単に敵出現方法をコントロール出来るように心掛けています。<br>ザコ敵の攻撃についても簡易ではありますが一斉に複数人が攻撃しないよう「攻撃可能枠」の考えを取り入れた制御方法を採用することで、複数人に囲まれて一度に殴られて倒されてしまうような理不尽な要素を排除しています。<br>ボス敵はアニメーションと攻撃処理の連携に注力しました。「攻撃の予兆」「攻撃」「攻撃後の余韻」といったメリハリを付け、プレイヤーが遊ぶ上で「これからどう動くべきか」を判断しやすくし、各アニメーションに期待される効果（タックル攻撃時には吹き飛ぶ。つかみ攻撃時にはプレイヤーは行動不能になる等）についても納得出来るようにしています。
+											</p>
+										</div>
+										<div class="modal-footer">
+											<a href="https://youtu.be/RmTpK6tRiZE" target="_brank" rel="noopener"><button type="button" class="btn btn-primary">Youtube</button></a>
+											<a href="https://1drv.ms/u/s!Au-8FqgREBKZik98qGcArSnOGyZZ?e=NjvlXr" target="_brank" rel="noopener"><button type="button" class="btn btn-primary">実行ファイル</button></a>
+											<a href="https://1drv.ms/u/s!Au-8FqgREBKZilmreWACqwg8CWWL" target="_brank" rel="noopener"><button type="button" class="btn btn-primary">ソースコード</button></a>
+											<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+										</div>
 									</div>
-									<a class="carousel-control-prev" href="#unrealquestIndicator" role="button" data-slide="prev">
-										<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-										<span class="sr-only">Previous</span>
-									</a>
-									<a class="carousel-control-next" href="#unrealquestIndicator" role="button" data-slide="next">
-										<span class="carousel-control-next-icon" aria-hidden="true"></span>
-										<span class="sr-only">Next</span>
-									</a>
 								</div>
-							</div>
-							<div class="modal-header">
-								<h5 class="modal-title" id="unrealquestTitle">アンリアルクエスト～グレイマンからの5つの挑戦状～ 解答作品「ころころボオオオオオオオオオル！」</h5>
-							</div>
-							<div class="modal-body">
-								【使用エンジン】<br>
-								Unreal Engine 4<br><br>
-								【製作日数】<br>
-								5日<br><br>
-								【説明】<br>
-								5日間に渡って初級～上級に振り分けられた課題をこなし、1つの作品を作り上げる「アンリアルクエスト」に解答作品として提出したゲームです。<br>
-								当日になるまで課題が出されないという性質上、突貫工事のような作り方になってしまったことが心残りです。このイベントに参加したことで自分の実装力は想像よりも低い水準にあることが分かり、今後のゲーム制作において課題を見つけることができたのは非常に幸運でした。<br>
-								<br>
-								配布しているソースコードはマーケットプレイスで購入したアセットを取り除いたバージョンとなっているので、Youtube版・プレイアブル版とは異なる点があることをご了承ください。
-							</div>
-							<div class="modal-footer">
-								<a href="https://youtu.be/7Reqm7VWISA" target="_brank"><button type="button" class="btn btn-primary">Youtube</button></a>
-								<a href="https://1drv.ms/u/s!Au-8FqgREBKZjnE5tDT2eRBf9snJ?e=oyZgzo" target="_brank"><button	type="button" class="btn btn-primary">実行ファイル(.exe)</button></a>
-								<a href="https://1drv.ms/u/s!Au-8FqgREBKZjnL3vLp9Nwi124rt?e=UM7MX2" target="_brank"><button type="button" class="btn btn-primary">ソースコード</button></a>
-								<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
 							</div>
 						</div>
 					</div>
 				</div>
-			</p>
-			<!-- ここまで -->
 
 
-			<!-- コンテンツ -->
-			<p>
-			<div class="col-lg-4">
-				<img src="img/portfolio/PrimitiveShooter/thumbnail.png" class="content-thumbnail">
-				<h3>Primitive Shooter</h3>
-				<p>オリジナル作品第1弾</p>
-				<p><button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#original1">View
-						details</button></p>
-			</div>
-			
-			<div class="modal fade" id="original1" tabindex="-1" role="dialog" aria-labelledby="petitTitle" aria-hidden="true">
-				<div class="modal-dialog modal-lg" role="document">
-					<div class="modal-content border-0">
-						<div>
-							<div id="originalIndicator_1" class="carousel slide" data-ride="carousel" data-interval="false">
-								<div class="carousel-inner">
-									<div class="carousel-item active"><img src="img/portfolio/PrimitiveShooter/1.png" width="100%"
-											height="100%"></div>
+				<div class="col-md-6 col-lg-4" style="margin-top: 50px;">
+					<div class="card shadow-sm">
+						<img src="img/portfolio/PetitCon14/thumbnail.png" class="card-img-top">
+						<div class="card-body">
+							<h4 class="card-title">GET OUT OF THE BEACH !</h4>
+							<h6 class="card-subtitle text-muted">第14回ぷちコン応募作品</h6>
+							<p class="card-text"></p>
+
+							<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal5">View Detail</button>
+							<div class="modal fade" data-backdrop="true" id="modal5" tabindex="-1" role="dialog" aria-labelledby="label1" aria-hidden="true">
+								<div class="modal-dialog modal-lg" role="document">
+									<div class="modal-content">
+
+										<div id="carouselControls5" class="carousel slide" data-ride="carousel">
+											<div class="carousel-inner">
+												<div class="carousel-item active">
+													<img src="img/portfolio/PetitCon14/1.png" class="d-block w-100">
+												</div>
+												<div class="carousel-item">
+													<img src="img/portfolio/PetitCon14/2.png" class="d-block w-100">
+												</div>
+												<div class="carousel-item">
+													<img src="img/portfolio/PetitCon14/3.png" class="d-block w-100">
+												</div>
+												<div class="carousel-item">
+													<img src="img/portfolio/PetitCon14/4.png" class="d-block w-100">
+												</div>
+											</div>
+											<a class="carousel-control-prev" href="#carouselControls5" role="button" data-slide="prev">
+												<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+											</a>
+											<a class="carousel-control-next" href="#carouselControls5" role="button" data-slide="next">
+												<span class="carousel-control-next-icon" aria-hidden="true"></span>
+											</a>
+										</div>
+
+										<div class="modal-header">
+											<h4 class="modal-title" id="label1">第14回ぷちコン応募作品「GET OUT OF THE BEACH !」</h4>
+										</div>
+										<div class="modal-body">
+											<p>
+											<h5>【使用エンジン】</h5>
+											Unreal Engine 4
+											</p>
+											<p>
+											<h5>【製作日数】</h5>
+											1ヶ月
+											</p>
+											<p>
+											<h5>【説明】</h5>
+											物理の動きをプレイヤーに取り入れることを目標にして制作しました。
+											<br>
+											物理を取り入れることで操作性は悪くなってしまいますが、その操作性の悪さが面白さに寄与するかも検証してみたかったので、プレイヤーキャラクターは「ローリングボールテンプレート」のプレイヤーキャラクターをベースにすることにしました。<br>しかしローリングボールテンプレートの動作をそのまま使うのはあまりにも操作性が悪すぎたので、緩和策として方向転換時に追加の力を加えるようにしましたが、面白さに繋がるだけの操作性の悪さは確保することで、結果としてユニークなゲームを作ることができました。<br><br>プレイヤーキャラクターの「スイカくん」はユーモラスな出で立ちで、非常にお気に入りのキャラクターです。
+											</p>
+										</div>
+										<div class="modal-footer">
+											<a href="https://youtu.be/cTEspbcbv1Y" target="_brank" rel="noopener"><button type="button" class="btn btn-primary">Youtube</button></a>
+											<a href="https://1drv.ms/u/s!Au-8FqgREBKZi3sYqG3fqX7U2bBK?e=d0CY2h" target="_brank" rel="noopener"><button type="button" class="btn btn-primary">実行ファイル</button></a>
+											<a href="https://1drv.ms/u/s!Au-8FqgREBKZi3sYqG3fqX7U2bBK?e=Xu53H9" target="_brank" rel="noopener"><button type="button" class="btn btn-primary">ソースコード</button></a>
+											<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+										</div>
+									</div>
 								</div>
-								<a class="carousel-control-prev" href="#originalIndicator_1" role="button" data-slide="prev">
-									<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-									<span class="sr-only">Previous</span>
-								</a>
-								<a class="carousel-control-next" href="#originalIndicator_1" role="button" data-slide="next">
-									<span class="carousel-control-next-icon" aria-hidden="true"></span>
-									<span class="sr-only">Next</span>
-								</a>
 							</div>
-						</div>
-						<div class="modal-header">
-							<h5 class="modal-title" id="petitTitle">Primitive Shooter</h5>
-						</div>
-						<div class="modal-body">
-							【使用エンジン】<br>
-							Unreal Engine 4<br><br>
-							【製作日数】<br>
-							1ヶ月（やり直し期間を含めると２ヶ月ほど）<br><br>
-							【説明】<br>
-							この作品を作るまでUE4の主な用途が気になる技術のプロトタイプ実装だったので「そろそろゲームを作らねばなるまい」と思い立ち制作をしました。<br>
-							この作品ではほとんど触ったことがなかったUMGで敵を倒すたびに増えるコンボ数やコンボ数増加時のアニメーション、敵の位置を知らせるためのインジケーター等を実装しました。ここで知り得た技術は後のぷちコン制作にも活かすことが出来ました。
-						</div>
-						<div class="modal-footer">
-							<a href="https://twitter.com/Dv7Pavilion/status/918810739145457664" target="_brank"><button type="button"
-									class="btn btn-primary">Twitter</button></a>
-							<a href="https://paviliondv7.itch.io/primitive-shooter" target="_brank"><button type="button"
-								class="btn btn-primary">実行ファイル(.exe)</button></a>
-							<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
 						</div>
 					</div>
 				</div>
-			</div>
-			</p>
-			<!-- ここまで -->
 
+				<div class="col-md-6 col-lg-4" style="margin-top: 50px;">
+					<div class="card shadow-sm">
+						<img src="img/portfolio/ue4fest_gamejam/thumbnail.png" class="card-img-top">
+						<div class="card-body">
+							<h4 class="card-title">SHEEP DOG!!</h4>
+							<h6 class="card-subtitle text-muted">UE4 Fest x ゲームジャム 応募作品</h6>
+							<p class="card-text"></p>
 
-			<!-- コンテンツ -->
-			<p>
-			<div class="col-lg-4">
-				<img src="img/portfolio/RollingBall/thumbnail.png" class="content-thumbnail">
-				<h3>Rolling Ball</h3>
-				<p>オリジナル作品第2弾</p>
-				<p><button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#original2">View
-						details</button></p>
-			</div>
-			
-			<div class="modal fade" id="original2" tabindex="-1" role="dialog" aria-labelledby="petitTitle" aria-hidden="true">
-				<div class="modal-dialog modal-lg" role="document">
-					<div class="modal-content border-0">
-						<div>
-							<div id="originalIndicator_2" class="carousel slide" data-ride="carousel" data-interval="false">
-								<div class="carousel-inner">
-									<div class="carousel-item active"><img src="img/portfolio/RollingBall/1.png" width="100%"
-											height="100%"></div>
+							<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal6">View Detail</button>
+							<div class="modal fade" data-backdrop="true" id="modal6" tabindex="-1" role="dialog" aria-labelledby="label1" aria-hidden="true">
+								<div class="modal-dialog modal-lg" role="document">
+									<div class="modal-content">
+
+										<div id="carouselControls6" class="carousel slide" data-ride="carousel">
+											<div class="carousel-inner">
+												<div class="carousel-item active">
+													<img src="img/portfolio/ue4fest_gamejam/1.png" class="d-block w-100">
+												</div>
+												<div class="carousel-item">
+													<img src="img/portfolio/ue4fest_gamejam/2.png" class="d-block w-100">
+												</div>
+												<div class="carousel-item">
+													<img src="img/portfolio/ue4fest_gamejam/3.png" class="d-block w-100">
+												</div>
+												<div class="carousel-item">
+													<img src="img/portfolio/ue4fest_gamejam/4.png" class="d-block w-100">
+												</div>
+											</div>
+											<a class="carousel-control-prev" href="#carouselControls6" role="button" data-slide="prev">
+												<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+											</a>
+											<a class="carousel-control-next" href="#carouselControls6" role="button" data-slide="next">
+												<span class="carousel-control-next-icon" aria-hidden="true"></span>
+											</a>
+										</div>
+
+										<div class="modal-header">
+											<h4 class="modal-title" id="label1">UE4 Fest x ゲームジャム応募作品「SHEEP DOG!!」</h4>
+										</div>
+										<div class="modal-body">
+											<p>
+											<h5>【使用エンジン】</h5>
+											Unreal Engine 4
+											</p>
+											<p>
+											<h5>【製作日数】</h5>
+											48時間
+											</p>
+											<p>
+											<h5>【説明】</h5>
+											短時間での完成を目指すため「実現可能な単純なルール」「過去に購入したアセットを活用する」を最優先事項として制作しました。<br>「逃げた羊を柵の中に集める」というルールを、よりユニークなものへと進化させるため、今回のようなアクションゲームには不向きな「ドラッグをして飛ばす操作」を実装しました。この実装については「制限時間の焦り」、「羊のプレイヤーの反対方向へと動く」仕組みに「ドラッグで飛ばす操作」という操作性の悪さが組み合わさることで「狙った場所にうまく動けない」というもどかしさが生まれ、それがゲームの面白さに寄与すると考えたためです。<br>このゲームにたどり着くまで長い時間悩んでしまったので実質の制作時間は30時間程度でしたが、過去に購入したアセットや制作経験によって適度な規模で面白いゲームを作れたと思います。残念ながら結果発表放送では特に触れられることもなく終わってしまいましたが非常に良い経験ができたと感じています。
+											</p>
+										</div>
+										<div class="modal-footer">
+											<a href="https://www.youtube.com/watch?v=qVccwAIhb8k&feature=emb_title" target="_brank" rel="noopener"><button type="button" class="btn btn-primary">Youtube</button></a>
+											<!-- <a href="https://1drv.ms/u/s!Au-8FqgREBKZi3sYqG3fqX7U2bBK?e=d0CY2h" target="_brank" rel="noopener"><button type="button" class="btn btn-primary">実行ファイル</button></a>
+											<a href="https://1drv.ms/u/s!Au-8FqgREBKZi3sYqG3fqX7U2bBK?e=Xu53H9" target="_brank" rel="noopener"><button type="button" class="btn btn-primary">ソースコード</button></a> -->
+											<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+										</div>
+									</div>
 								</div>
-								<a class="carousel-control-prev" href="#originalIndicator_2" role="button" data-slide="prev">
-									<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-									<span class="sr-only">Previous</span>
-								</a>
-								<a class="carousel-control-next" href="#originalIndicator_2" role="button" data-slide="next">
-									<span class="carousel-control-next-icon" aria-hidden="true"></span>
-									<span class="sr-only">Next</span>
-								</a>
 							</div>
-						</div>
-						<div class="modal-header">
-							<h5 class="modal-title" id="petitTitle">Rolling Ball</h5>
-						</div>
-						<div class="modal-body">
-							【使用エンジン】<br>
-							Unreal Engine 4<br><br>
-							【製作日数】<br>
-							5日ほど<br><br>
-							【説明】<br>
-							この作品の１つ前に作成した「Primitive Shooter」が想像以上に時間がかかってしまい挫折しそうになったため「もっと短い時間でゲームを作る」を目標に着手しました。<br>
-							プレイヤーの操作、ゲームの進行等の仕組み自体は2日で完成したのですが面白いステージが全く思いつかず結果としてステージ制作に時間を多く取られてしまいました。<br>
-						</div>
-						<div class="modal-footer">
-							<a href="https://youtu.be/SqgxBfcXpW8" target="_brank"><button type="button"
-								class="btn btn-primary">Youtube</button></a>
-							<a href="https://paviliondv7.itch.io/therollingball" target="_brank"><button type="button"
-									class="btn btn-primary">実行ファイル(.exe)</button></a>
-							<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
 						</div>
 					</div>
 				</div>
-			</div>
-			</p>
-			<!-- ここまで -->
-	
 
-			<!-- コンテンツ -->
-			<p>
-			<div class="col-lg-4">
-				<img src="img/portfolio/Asteroid/thumbnail.png" class="content-thumbnail">
-				<h3>Simple Asteroid</h3>
-				<p>オリジナル作品第3弾</p>
-				<p><button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#original8">View
-						details</button></p>
-			</div>
-			
-			<div class="modal fade" id="original8" tabindex="-1" role="dialog" aria-labelledby="petitTitle" aria-hidden="true">
-				<div class="modal-dialog modal-lg" role="document">
-					<div class="modal-content border-0">
-						<div>
-							<div id="originalndicator_3" class="carousel slide" data-ride="carousel" data-interval="false">
-								<div class="carousel-inner">
-									<div class="carousel-item active"><img src="img/portfolio/Asteroid/1.png" width="100%"
-											height="100%"></div>
+				<div class="col-md-6 col-lg-4" style="margin-top: 50px;">
+					<div class="card shadow-sm">
+						<img src="img/portfolio/PetitCon15/thumbnail.png" class="card-img-top">
+						<div class="card-body">
+							<h4 class="card-title">ただいま瞑想中</h4>
+							<h6 class="card-subtitle text-muted">第15回ぷちコン応募作品</h6>
+							<p class="card-text"></p>
+
+							<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal7">View Detail</button>
+							<div class="modal fade" data-backdrop="true" id="modal7" tabindex="-1" role="dialog" aria-labelledby="label1" aria-hidden="true">
+								<div class="modal-dialog modal-lg" role="document">
+									<div class="modal-content">
+
+										<div id="carouselControls7" class="carousel slide" data-ride="carousel">
+											<div class="carousel-inner">
+												<div class="carousel-item active">
+													<img src="img/portfolio/PetitCon15/1.png" class="d-block w-100">
+												</div>
+												<div class="carousel-item">
+													<img src="img/portfolio/PetitCon15/2.png" class="d-block w-100">
+												</div>
+												<div class="carousel-item">
+													<img src="img/portfolio/PetitCon15/3.png" class="d-block w-100">
+												</div>
+												<div class="carousel-item">
+													<img src="img/portfolio/PetitCon15/4.png" class="d-block w-100">
+												</div>
+											</div>
+											<a class="carousel-control-prev" href="#carouselControls7" role="button" data-slide="prev">
+												<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+											</a>
+											<a class="carousel-control-next" href="#carouselControls7" role="button" data-slide="next">
+												<span class="carousel-control-next-icon" aria-hidden="true"></span>
+											</a>
+										</div>
+
+										<div class="modal-header">
+											<h4 class="modal-title" id="label1">第15回ぷちコン応募作品「ただいま瞑想中」</h4>
+										</div>
+										<div class="modal-body">
+											<p>
+											<h5>【使用エンジン】</h5>
+											Unreal Engine 4
+											</p>
+											<p>
+											<h5>【製作日数】</h5>
+											1週間
+											</p>
+											<p>
+											<h5>【説明】</h5>
+											「かわる」というテーマから「プレイヤーが変わる」「見た目が変わる」「用途が変わる」と様々な案も浮かびましたが「サクッっと作る」ため、案出しの段階で最も詳細にイメージ出来た「変わり身の術でいたずらを回避して仕返しする」ゲームに決定しました。<br>このゲームでは進行にQTEの仕組みを採用してみました。青グレイマンが飛びかかってくるシーケンサー内であるフレーム範囲内でプレイヤーの入力を検知した場合、成功シーケンサーを再生、入力が検知されなかった場合は失敗シーケンサーを再生するようにしています。<br>プログラム量が非常に少ない分、1日や2日で完成するかと考えていましたが、アニメーションとカメラからの写り具合の調整や、パーティクルの調整、変わり身の術後に置かれる幹アセットの作成に多くの時間を取られてしまいました。しかしシーケンサーの取り扱いやアセット作成のワークフローについては非常に勉強になりました。
+											</p>
+										</div>
+										<div class="modal-footer">
+											<a href="https://t.co/dlxAJckpvy?amp=1" target="_brank" rel="noopener"><button type="button" class="btn btn-primary">Youtube</button></a>
+											<a href="https://1drv.ms/u/s!Au-8FqgREBKZjWiVvQ-2CL3xFwoU?e=aFSb1f" target="_brank" rel="noopener"><button type="button" class="btn btn-primary">実行ファイル</button></a>
+											<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+										</div>
+									</div>
 								</div>
-								<a class="carousel-control-prev" href="#originalndicator_3" role="button" data-slide="prev">
-									<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-									<span class="sr-only">Previous</span>
-								</a>
-								<a class="carousel-control-next" href="#originalndicator_3" role="button" data-slide="next">
-									<span class="carousel-control-next-icon" aria-hidden="true"></span>
-									<span class="sr-only">Next</span>
-								</a>
 							</div>
-						</div>
-						<div class="modal-header">
-							<h5 class="modal-title" id="petitTitle">Simple Asteroid</h5>
-						</div>
-						<div class="modal-body">
-							【使用言語/ライブラリ】<br>
-							C++, SDL, GLEW, SOIL, glm, FMOD<br><br>
-							【製作日数】<br>
-							5日ほど<br><br>
-							【説明】<br>
-							「ゲームプログラミングC++」という書籍を読み終え「この本で知り得た知識を自分なりの形で出力したい」という思いから制作を開始しました。<br>
-							グラフィックスはOpenGL。フレームワークはSDL。サウンドはfmodといくつかライブラリを活用していますがオブジェクト管理、リソース管理、シェーダーを用いたライン描画等、ゲームエンジンによる制作と比べると格段に手間が多いものでしたが楽しんで完成まで持っていくことが出来ました。
-						</div>
-						<div class="modal-footer">
-							<a href="https://twitter.com/Dv7Pavilion/status/1098980336527011840" target="_brank"><button type="button"
-								class="btn btn-primary">Twitter</button></a>
-							<a href="https://1drv.ms/u/s!Au-8FqgREBKZiyjZM6pwNHNbGZ5R?e=Ycfpl4" target="_brank"><button type="button"
-								class="btn btn-primary">実行ファイル(.exe)</button></a>
-							<a href="https://1drv.ms/u/s!Au-8FqgREBKZiynXOx9VCQLdiDON?e=9WSWzp" target="_brank"><button type="button"
-									class="btn btn-primary">ソースコード</button></a>
-							<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
 						</div>
 					</div>
 				</div>
+
+				<div class="col-md-6 col-lg-4" style="margin-top: 50px;">
+					<div class="card shadow-sm">
+						<img src="img/portfolio/UnrealQuest/thumbnail.png" class="card-img-top">
+						<div class="card-body">
+							<h4 class="card-title">ころころボオオオオオオオオオル！</h4>
+							<h6 class="card-subtitle text-muted">アンリアルクエスト～グレイマンからの5つの挑戦状～ 解答作品</h6>
+							<p class="card-text"></p>
+
+							<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal8">View Detail</button>
+							<div class="modal fade" data-backdrop="true" id="modal8" tabindex="-1" role="dialog" aria-labelledby="label1" aria-hidden="true">
+								<div class="modal-dialog modal-lg" role="document">
+									<div class="modal-content">
+
+										<div id="carouselControls8" class="carousel slide" data-ride="carousel">
+											<div class="carousel-inner">
+												<div class="carousel-item active">
+													<img src="img/portfolio/UnrealQuest/1.png" class="d-block w-100">
+												</div>
+												<div class="carousel-item">
+													<img src="img/portfolio/UnrealQuest/2.png" class="d-block w-100">
+												</div>
+												<div class="carousel-item">
+													<img src="img/portfolio/UnrealQuest/3.png" class="d-block w-100">
+												</div>
+												<div class="carousel-item">
+													<img src="img/portfolio/UnrealQuest/4.png" class="d-block w-100">
+												</div>
+											</div>
+											<a class="carousel-control-prev" href="#carouselControls8" role="button" data-slide="prev">
+												<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+											</a>
+											<a class="carousel-control-next" href="#carouselControls8" role="button" data-slide="next">
+												<span class="carousel-control-next-icon" aria-hidden="true"></span>
+											</a>
+										</div>
+
+										<div class="modal-header">
+											<h4 class="modal-title" id="label1">アンリアルクエスト～グレイマンからの5つの挑戦状～ 解答作品「ころころボオオオオオオオオオル！」</h4>
+										</div>
+										<div class="modal-body">
+											<p>
+											<h5>【使用エンジン】</h5>
+											Unreal Engine 4
+											</p>
+											<p>
+											<h5>【製作日数】</h5>
+											5日
+											</p>
+											<p>
+											<h5>【説明】</h5>
+											5日間に渡って初級～上級に振り分けられた課題をこなし、1つの作品を作り上げる「アンリアルクエスト」に解答作品として提出したゲームです。<br>当日になるまで課題が出されないという性質上、突貫工事のような作り方になってしまったことが心残りです。このイベントに参加したことで自分の実装力は想像よりも低い水準にあることが分かり、今後のゲーム制作において課題を見つけることができたのは非常に幸運でした。<br><br>配布しているソースコードはマーケットプレイスで購入したアセットを取り除いたバージョンとなっているので、Youtube版・プレイアブル版とは異なる点があることをご了承ください。
+											</p>
+										</div>
+										<div class="modal-footer">
+											<a href="https://youtu.be/7Reqm7VWISA" target="_brank" rel="noopener"><button type="button" class="btn btn-primary">Youtube</button></a>
+											<a href="https://1drv.ms/u/s!Au-8FqgREBKZjnE5tDT2eRBf9snJ?e=oyZgzo" target="_brank" rel="noopener"><button type="button" class="btn btn-primary">実行ファイル</button></a>
+											<a href="https://1drv.ms/u/s!Au-8FqgREBKZjnL3vLp9Nwi124rt?e=UM7MX2" target="_brank" rel="noopener"><button type="button" class="btn btn-primary">ソースコード</button></a>
+											<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-6 col-lg-4" style="margin-top: 50px;">
+					<div class="card shadow-sm">
+						<img src="img/portfolio/PrimitiveShooter/thumbnail.png" class="card-img-top">
+						<div class="card-body">
+							<h4 class="card-title">Primitive Shooter</h4>
+							<h6 class="card-subtitle text-muted">オリジナル作品第1弾</h6>
+							<p class="card-text"></p>
+
+							<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal9">View Detail</button>
+							<div class="modal fade" data-backdrop="true" id="modal9" tabindex="-1" role="dialog" aria-labelledby="label1" aria-hidden="true">
+								<div class="modal-dialog modal-lg" role="document">
+									<div class="modal-content">
+
+										<div id="carouselControls9" class="carousel slide" data-ride="carousel">
+											<div class="carousel-inner">
+												<div class="carousel-item active">
+													<img src="img/portfolio/PrimitiveShooter/1.png" class="d-block w-100">
+												</div>
+											</div>
+											<a class="carousel-control-prev" href="#carouselControls9" role="button" data-slide="prev">
+												<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+											</a>
+											<a class="carousel-control-next" href="#carouselControls9" role="button" data-slide="next">
+												<span class="carousel-control-next-icon" aria-hidden="true"></span>
+											</a>
+										</div>
+
+										<div class="modal-header">
+											<h4 class="modal-title" id="label1">Primitive Shooter</h4>
+										</div>
+										<div class="modal-body">
+											<p>
+											<h5>【使用エンジン】</h5>
+											Unreal Engine 4
+											</p>
+											<p>
+											<h5>【製作日数】</h5>
+											２ヶ月
+											</p>
+											<p>
+											<h5>【説明】</h5>
+											この作品を作るまでUE4の主な用途が気になる技術のプロトタイプ実装だったので「そろそろゲームを作らねばなるまい」と思い立ち制作をしました。<br>この作品ではほとんど触ったことがなかったUMGで敵を倒すたびに増えるコンボ数やコンボ数増加時のアニメーション、敵の位置を知らせるためのインジケーター等を実装しました。ここで知り得た技術は後のぷちコン制作にも活かすことが出来ました。
+											</p>
+										</div>
+										<div class="modal-footer">
+											<a href="https://twitter.com/Dv7Pavilion/status/918810739145457664" target="_brank" rel="noopener"><button type="button" class="btn btn-primary">Twitter</button></a>
+											<a href="https://paviliondv7.itch.io/primitive-shooter" target="_brank" rel="noopener"><button type="button" class="btn btn-primary">実行ファイル</button></a>
+											<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-6 col-lg-4" style="margin-top: 50px;">
+					<div class="card shadow-sm">
+						<img src="img/portfolio/RollingBall/thumbnail.png" class="card-img-top">
+						<div class="card-body">
+							<h4 class="card-title">Rolling Ball</h4>
+							<h6 class="card-subtitle text-muted">オリジナル作品第2弾</h6>
+							<p class="card-text"></p>
+
+							<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal10">View Detail</button>
+							<div class="modal fade" data-backdrop="true" id="modal10" tabindex="-1" role="dialog" aria-labelledby="label1" aria-hidden="true">
+								<div class="modal-dialog modal-lg" role="document">
+									<div class="modal-content">
+
+										<div id="carouselControls10" class="carousel slide" data-ride="carousel">
+											<div class="carousel-inner">
+												<div class="carousel-item active">
+													<img src="img/portfolio/RollingBall/1.png" class="d-block w-100">
+												</div>
+											</div>
+											<a class="carousel-control-prev" href="#carouselControls10" role="button" data-slide="prev">
+												<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+											</a>
+											<a class="carousel-control-next" href="#carouselControls10" role="button" data-slide="next">
+												<span class="carousel-control-next-icon" aria-hidden="true"></span>
+											</a>
+										</div>
+
+										<div class="modal-header">
+											<h4 class="modal-title" id="label1">Rolling Ball</h4>
+										</div>
+										<div class="modal-body">
+											<p>
+											<h5>【使用エンジン】</h5>
+											Unreal Engine 4
+											</p>
+											<p>
+											<h5>【製作日数】</h5>
+											5日
+											</p>
+											<p>
+											<h5>【説明】</h5>
+											この作品の１つ前に作成した「Primitive Shooter」が想像以上に時間がかかってしまい挫折しそうになったため「もっと短い時間でゲームを作る」を目標に着手しました。<br>プレイヤーの操作、ゲームの進行等の仕組み自体は2日で完成したのですが面白いステージが全く思いつかず結果としてステージ制作に時間を多く取られてしまいました。
+											</p>
+										</div>
+										<div class="modal-footer">
+											<a href="https://youtu.be/SqgxBfcXpW8" target="_brank" rel="noopener"><button type="button" class="btn btn-primary">Youtube</button></a>
+											<a href="https://paviliondv7.itch.io/therollingball" target="_brank" rel="noopener"><button type="button" class="btn btn-primary">実行ファイル</button></a>
+											<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-6 col-lg-4" style="margin-top: 50px;">
+					<div class="card shadow-sm">
+						<img src="img/portfolio/Asteroid/thumbnail.png" class="card-img-top">
+						<div class="card-body">
+							<h4 class="card-title">Simple Asteroid</h4>
+							<h6 class="card-subtitle text-muted">オリジナル作品第3弾</h6>
+							<p class="card-text"></p>
+
+							<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal11">View Detail</button>
+							<div class="modal fade" data-backdrop="true" id="modal11" tabindex="-1" role="dialog" aria-labelledby="label1" aria-hidden="true">
+								<div class="modal-dialog modal-lg" role="document">
+									<div class="modal-content">
+
+										<div id="carouselControls11" class="carousel slide" data-ride="carousel">
+											<div class="carousel-inner">
+												<div class="carousel-item active">
+													<img src="img/portfolio/Asteroid/1.png" class="d-block w-100">
+												</div>
+											</div>
+											<a class="carousel-control-prev" href="#carouselControls11" role="button" data-slide="prev">
+												<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+											</a>
+											<a class="carousel-control-next" href="#carouselControls11" role="button" data-slide="next">
+												<span class="carousel-control-next-icon" aria-hidden="true"></span>
+											</a>
+										</div>
+
+										<div class="modal-header">
+											<h4 class="modal-title" id="label1">Simple Asteroid</h4>
+										</div>
+										<div class="modal-body">
+											<p>
+											<h5>【使用言語/ライブラリ】</h5>
+											C++, SDL, GLEW, SOIL, glm, FMOD
+											</p>
+											<p>
+											<h5>【製作日数】</h5>
+											5日
+											</p>
+											<p>
+											<h5>【説明】</h5>
+											「ゲームプログラミングC++」という書籍を読み終え「この本で知り得た知識を自分なりの形で出力したい」という思いから制作を開始しました。<br>グラフィックスはOpenGL。フレームワークはSDL。サウンドはfmodといくつかライブラリを活用していますがオブジェクト管理、リソース管理、シェーダーを用いたライン描画等、ゲームエンジンによる制作と比べると格段に手間が多いものでしたが楽しんで完成まで持っていくことが出来ました。
+											</p>
+										</div>
+										<div class="modal-footer">
+											<a href="https://twitter.com/Dv7Pavilion/status/1098980336527011840" target="_brank" rel="noopener"><button type="button" class="btn btn-primary">Twitter</button></a>
+											<a href="https://1drv.ms/u/s!Au-8FqgREBKZiyjZM6pwNHNbGZ5R?e=Ycfpl4" target="_brank" rel="noopener"><button type="button" class="btn btn-primary">実行ファイル</button></a>
+											<a href="https://1drv.ms/u/s!Au-8FqgREBKZiynXOx9VCQLdiDON?e=9WSWzp" target="_brank" rel="noopener"><button type="button" class="btn btn-primary">ソースコード</button></a>
+											<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-6 col-lg-4" style="margin-top: 50px;">
+					<div class="card shadow-sm">
+						<img src="img/portfolio/StealthGameAIKit/thumbnail.png" class="card-img-top">
+						<div class="card-body">
+							<h4 class="card-title">Stealth Game AI Kit</h4>
+							<h6 class="card-subtitle text-muted">UE4 Marketplace 出品作品</h6>
+							<p class="card-text"></p>
+
+							<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal12">View Detail</button>
+							<div class="modal fade" data-backdrop="true" id="modal12" tabindex="-1" role="dialog" aria-labelledby="label1" aria-hidden="true">
+								<div class="modal-dialog modal-lg" role="document">
+									<div class="modal-content">
+
+										<div id="carouselControls12" class="carousel slide" data-ride="carousel">
+											<div class="carousel-inner">
+												<div class="carousel-item active">
+													<img src="img/portfolio/StealthGameAIKit/1.png" class="d-block w-100">
+												</div>
+											</div>
+											<a class="carousel-control-prev" href="#carouselControls12" role="button" data-slide="prev">
+												<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+											</a>
+											<a class="carousel-control-next" href="#carouselControls12" role="button" data-slide="next">
+												<span class="carousel-control-next-icon" aria-hidden="true"></span>
+											</a>
+										</div>
+
+										<div class="modal-header">
+											<h4 class="modal-title" id="label1">Stealth Game AI Kit</h4>
+										</div>
+										<div class="modal-body">
+											<p>
+											<h5>【使用エンジン】</h5>
+											Unreal Engine 4
+											</p>
+											<p>
+											<h5>【製作日数】</h5>
+											６ヶ月
+											</p>
+											<p>
+											<h5>【説明】</h5>
+											「ゲームAI」について１つの大きな成果物を出したいと考えマーケットプレイスにてステルスゲームのAIにフォーカスしたプロジェクトを販売しました。<br>初めての海外のマーケットへの販売のためGoogle翻訳を使って商品ページを書いたり提出後のEpic Gamesによる添削等、初めてのことだらけだったので不安も多くありましたが無事に商品ページが公開され実際に購入された通知を受け取ったときは非常に嬉しかったです。
+											</p>
+										</div>
+										<div class="modal-footer">
+											<a href="https://www.youtube.com/watch?v=yC1zUaic0rU&feature=youtu.be" target="_brank" rel="noopener"><button type="button" class="btn btn-primary">Youtube</button></a>
+											<a href="https://www.unrealengine.com/marketplace/ja/product/stealth-game-ai-kit" target="_brank" rel="noopener"><button type="button" class="btn btn-primary">Marketplace</button></a>
+											<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-6 col-lg-4" style="margin-top: 50px;">
+					<div class="card shadow-sm">
+						<img src="img/portfolio/HTNEditorPlugin/thumbnail.png" class="card-img-top">
+						<div class="card-body">
+							<h4 class="card-title">HTN Editor Plugin</h4>
+							<h6 class="card-subtitle text-muted">HTNドメイン構築用エディタ</h6>
+							<p class="card-text"></p>
+
+							<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal13">View Detail</button>
+							<div class="modal fade" data-backdrop="true" id="modal13" tabindex="-1" role="dialog" aria-labelledby="label1" aria-hidden="true">
+								<div class="modal-dialog modal-lg" role="document">
+									<div class="modal-content">
+
+										<div id="carouselControls13" class="carousel slide" data-ride="carousel">
+											<div class="carousel-inner">
+												<div class="carousel-item active">
+													<img src="img/portfolio/HTNEditorPlugin/1.png" class="d-block w-100">
+												</div>
+											</div>
+											<a class="carousel-control-prev" href="#carouselControls13" role="button" data-slide="prev">
+												<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+											</a>
+											<a class="carousel-control-next" href="#carouselControls13" role="button" data-slide="next">
+												<span class="carousel-control-next-icon" aria-hidden="true"></span>
+											</a>
+										</div>
+
+										<div class="modal-header">
+											<h4 class="modal-title" id="label1">HTN Editor Plugin</h4>
+										</div>
+										<div class="modal-body">
+											<p>
+											<h5>【使用エンジン】</h5>
+											Unreal Engine 4
+											</p>
+											<p>
+											<h5>【製作日数】</h5>
+											2ヶ月
+											</p>
+											<p>
+											<h5>【説明】</h5>
+											エディタ拡張に挑戦してみたかったのでUnreal Engine 4に標準で搭載されている「HTN Planner Plugin」で使用するHTNドメインを構築するためのエディタをBehavior Treeエディタのソースを参考に作りました。<br>ベースがあったおかげでエディタとして必要な独自ノードの実装、配色、ノード接続の可否といったユーザビリティについては早い段階でレベルの高い状態に持っていくことができました。HTN Planner Pluginとエディタの統合についてはデータの持たせ方、上位ノードと下位ノードとの通信といった仕組みや設計はまだまだ荒削りな所もありますが、うまく動作させることが出来たため非常に満足しています。
+											</p>
+										</div>
+										<div class="modal-footer">
+											<a href="https://github.com/bullyleo/UnrealHTNGraphEditor" target="_brank" rel="noopener"><button type="button" class="btn btn-primary">ソースコード</button></a>
+											<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
 			</div>
-			</p>
-			<!-- ここまで -->
-				
 		</div>
 
 
-		<!-- マーケットプレイス出品 -->
-
-		<h1 class="text-center p-4" style="font-size: 60px; font-weight: 600;">マーケットプレイス</h1>
-		<div class="row justify-content-center pb-5 mb-3 border-bottom">
-
-			<!-- コンテンツ -->
-			<p>
-			<div class="col-lg-4">
-				<img src="img/portfolio/StealthGameAIKit/thumbnail.png" class="content-thumbnail">
-				<h3>Stealth Game AI Kit</h3>
-				<p>UE4 Marketplace 出品作品</p>
-				<p><button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#marketplace1">View
-						details</button></p>
-			</div>
-			
-			<div class="modal fade" id="marketplace1" tabindex="-1" role="dialog" aria-labelledby="petitTitle" aria-hidden="true">
-				<div class="modal-dialog modal-lg" role="document">
-					<div class="modal-content border-0">
-						<div>
-							<div id="marketplaceIndicator_1" class="carousel slide" data-ride="carousel" data-interval="false">
-								<div class="carousel-inner">
-									<div class="carousel-item active"><img src="img/portfolio/StealthGameAIKit/1.png" width="100%"
-											height="100%"></div>
-								</div>
-								<a class="carousel-control-prev" href="#marketplaceIndicator_1" role="button" data-slide="prev">
-									<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-									<span class="sr-only">Previous</span>
-								</a>
-								<a class="carousel-control-next" href="#marketplaceIndicator_1" role="button" data-slide="next">
-									<span class="carousel-control-next-icon" aria-hidden="true"></span>
-									<span class="sr-only">Next</span>
-								</a>
-							</div>
-						</div>
-						<div class="modal-header">
-							<h5 class="modal-title" id="petitTitle">Stealth Game AI Kit</h5>
-						</div>
-						<div class="modal-body">
-							【使用エンジン】<br>
-							Unreal Engine 4<br><br>
-							【製作日数】<br>
-							６ヶ月<br><br>
-							【説明】<br>
-							「ゲームAI」について１つの大きな成果物を出したいと考えマーケットプレイスにてステルスゲームのAIにフォーカスしたプロジェクトを販売しました。<br>
-							このプロジェクトでは特に「異常が発生したときの敵兵士の振る舞い」について注力しました。<br>
-							初めての海外のマーケットへの販売のためGoogle翻訳を使って商品ページを書いたり提出後のEpic Gamesによる添削等、初めてのことだらけだったので不安も多くありましたが無事に商品ページが公開され実際に購入された通知を受け取ったときは非常に嬉しかったです。
-						</div>
-						<div class="modal-footer">
-							<a href="https://www.youtube.com/watch?v=yC1zUaic0rU&feature=youtu.be" target="_brank"><button type="button"
-									class="btn btn-primary">Youtube</button></a>
-							<a href="https://www.unrealengine.com/marketplace/ja/product/stealth-game-ai-ki" target="_brank"><button type="button"
-									class="btn btn-primary">Marketplace</button></a>
-							<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-						</div>
-					</div>
-				</div>
-			</div>
-			</p>
-			<!-- ここまで -->
-
-		</div>
-
-
-
-		<!-- エディタ拡張 -->
-
-		<h1 class="text-center p-4" style="font-size: 60px; font-weight: 600;">エディタ拡張</h1>
-		<div class="row justify-content-center pb-5 mb-3 border-bottom">
-
-			<!-- コンテンツ -->
-			<p>
-			<div class="col-lg-4">
-				<img src="img/portfolio/HTNEditorPlugin/thumbnail.png" class="content-thumbnail">
-				<h3>HTN Editor Plugin</h3>
-				<p>HTNドメイン構築用エディタ</p>
-				<p><button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#editor1">View
-						details</button></p>
-			</div>
-			
-			<div class="modal fade" id="editor1" tabindex="-1" role="dialog" aria-labelledby="petitTitle"
-				aria-hidden="true">
-				<div class="modal-dialog modal-lg" role="document">
-					<div class="modal-content border-0">
-						<div>
-							<div id="editorIndicator_1" class="carousel slide" data-ride="carousel" data-interval="false">
-								<div class="carousel-inner">
-									<div class="carousel-item active"><img src="img/portfolio/HTNEditorPlugin/1.png" width="100%"
-											height="100%"></div>
-								</div>
-								<a class="carousel-control-prev" href="#editorIndicator_1" role="button" data-slide="prev">
-									<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-									<span class="sr-only">Previous</span>
-								</a>
-								<a class="carousel-control-next" href="#editorIndicator_1" role="button" data-slide="next">
-									<span class="carousel-control-next-icon" aria-hidden="true"></span>
-									<span class="sr-only">Next</span>
-								</a>
-							</div>
-						</div>
-						<div class="modal-header">
-							<h5 class="modal-title" id="petitTitle">HTN Editor Plugin</h5>
-						</div>
-						<div class="modal-body">
-							【使用エンジン】<br>
-							Unreal Engine 4<br><br>
-							【製作日数】<br>
-							2ヶ月ほど<br><br>
-							【説明】<br>
-							エディタ拡張に挑戦してみたかったのでUnreal Engine 4に標準で搭載されている「HTN Planner Plugin」で使用するHTNドメインを構築するためのエディタをBehavior Treeエディタのソースを参考に作りました。<br>
-							ベースがあったおかげでエディタとして必要な独自ノードの実装、配色、ノード接続の可否といったユーザビリティについては早い段階でレベルの高い状態に持っていくことができました。HTN Planner Pluginとエディタの統合についてはデータの持たせ方、上位ノードと下位ノードとの通信といった仕組みや設計はまだまだ荒削りな所もありますが、うまく動作させることが出来たため非常に満足しています。
-						</div>
-						<div class="modal-footer">
-							<a href="https://github.com/bullyleo/UnrealHTNGraphEditor" target="_brank"><button type="button"
-									class="btn btn-primary">ソースコード</button></a>
-							<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-						</div>
-					</div>
-				</div>
-			</div>
-			</p>
-			<!-- ここまで -->
-
-		</div>
-	</div>
-
-
-	<!-- Optional JavaScript -->
-	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-	<script src="https://code.jquery.com/jquery-3.5.1.min.js"
-		integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-		crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-		integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-		crossorigin="anonymous"></script>
-
-	<script>
-		$(".navbar-nav li a").each(function () {
-			var target = $(this).attr('href');
-			if (location.href.match(target)) {
-				$(this).parent().addClass('active');
-			} else {
-				$(this).parent().removeClass('active');
-			}
-		});
-	</script>
-
-</body>
+	</body>
 
 </html>

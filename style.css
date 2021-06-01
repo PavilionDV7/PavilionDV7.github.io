@@ -1,35 +1,27 @@
-/* @import url('https://fonts.googleapis.com/css?family=Montserrat:600|Open+Sans:600&display=swap'); */
-
-
-.cover-container {
-	max-width: 50%;
-}
-
-.cover-container h1 {
-	padding-top: 50px;
-	font-size: 50px;
-	font-weight: 600;
-	color: #094067;
-}
-
-.cover-container h3 {
-	color: #175988;
+.grid-striped .row:nth-of-type(2n) {
+    background-color: rgb(245, 245, 245);
 }
 
 
-.cover-container .main-contents-desc {
-	padding-top: 20px;
-	padding-bottom: 50px;
-	font-size: 1.3em;
-	}
-
-.cover-container .main-contents-desc li {
-	list-style: none;
+.navbar-nav .nav-link {
+	color: #7198b4 !important;
+	border-bottom: 4px solid #e3f2fd;
 }
 
-.cover-container .col-sm-auto {
-	margin-left: -50px;
+.navbar-nav .nav-link:hover {
+	border-bottom: 4px solid #094067;
+	color: #094067 !important;
+	transition: .1s linear;
 }
+
+.navbar-nav .nav-item.active a.nav-link {
+	color: #094067 !important;
+}
+
+.navbar-nav .nav-item.active a.nav-link:hover {
+	border-bottom: 0px !important;
+}
+
 
 .star-rating{
     position: relative;

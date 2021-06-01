@@ -1,132 +1,99 @@
-<!doctype html>
-<html lang="ja">
+<!DOCTYPE html>
+<html>
 
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<head>
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"			integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+		<link rel="stylesheet" href="common.css">
+		<link rel="stylesheet" href="style.css">
 
-	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-	<link rel="stylesheet" href="common.css">
-	<link rel="stylesheet" href="index.css">
+		<link rel="apple-touch-icon" type="image/png" href="/apple-touch-icon-180x180.png">
+		<link rel="icon" type="image/png" href="/icon-192x192.png">
+	</head>
 
-	<link rel="apple-touch-icon" type="image/png" href="/apple-touch-icon-180x180.png">
-	<link rel="icon" type="image/png" href="/icon-192x192.png">
+	<body>
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3h56lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+			crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+			crossorigin="anonymous"></script>
 
 
-	<title>PavilionDV7's Portfolio</title>
-</head>
-
-<body>
-
-	<nav class="navbar sticky-top navbar-expand-md p-1">
-		<a></a> <!-- トグルボタンを右寄せにするため -->
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04"
-			aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
+		<nav class="navbar sticky-top navbar-expand-lg navbar-light" style="background-color:#e3f2fd; padding:0;">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="margin: 15px;"><span class="navbar-toggler-icon"></span></button>
+			<a class="navbar-brand"></a>
+			<div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+				<ul class="navbar-nav justify-content-between w-25">
+					<li class="nav-item active"><a class="nav-link" href="index.html"><h2>HOME</h2></a></li>
+					<li class="nav-item"><a class="nav-link" href="portfolio.html"><h2>PORTFOLIO</h2></a></li>
+				</ul>
+			</div>
+		</nav>
 	
-		<div class="collapse navbar-collapse justify-content-sm-center" id="navbarsExample04">
-			<ul class="navbar-nav text-sm-right">
-				<li class="nav-item mx-1"><a class="nav-link" href="index.html">Home</a></li>
-				<li class="nav-item mx-1"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
-			</ul>
-		</div>
-	</nav>
 
-	<div class="container-fluid">
-		<div class="cover-container mx-auto">
-			<div class="main-contents">
-				<h1>自己紹介</h1>
-				<div class="main-contents-desc">
-					はじめまして。PavilionDV7と申します。<br>
-					Unreal Engine 4を主軸にゲーム制作、または関心の強いゲームAIについての実装・実験をしています。作品についてはPortfolioページにまとまっているので是非ご覧ください。<br>
-					<br>
-					制作以外にも制作/実験過程で知り得た情報は積極的にブログにて公開しています。ページ下部に各ブログへのリンクを貼っていますので、こちらも見ていただけると幸いです。
-				</div>
+		<div class="container">
 
-				<h1>スキル</h1>
-				<div class="main-contents-desc">
-					<div class="col p-0">
-						<div class="row-lg-4 pt-4 pb-4 border-bottom">
-							<div class="row">
-								<div class="col-lg-4 align-middle" style="white-space: nowrap;"><h3>Unreal Engine 4</h3></div>
-								<div class="col-lg-3 align-middle pl-5"><span class="star-rating" data-rate="5"></span></div>
-							</div>
-							<p> 
-								基本的な操作に加えUnreal C++を使ったゲームロジックの構築、新しいノードの追加とSlateを利用したエディタ拡張まで経験があります。<br>
-								UE4を利用したマルチプレイゲームについてはUdemyの講座を参考に制作した程度です。
-							</p>
-						</div>
-
-						<div class="row-lg-4 pt-4 pb-4 border-bottom">
-							<div class="row">
-								<div class="col-lg-4 align-middle" style="white-space: nowrap;"><h3>OpenGL + SDL</h3></div>
-								<div class="col-lg-3 align-middle pl-5"><span class="star-rating" data-rate="3"></span></div>
-							</div>
-							<p>
-								参考書を写経。その後、簡素な線描画による2Dシューティングゲームを自作した程度です。
-							</p>
-						</div>
-
-						<div class="row-lg-4 pt-4 pb-4 border-bottom">
-							<div class="row">
-								<div class="col-lg-4 align-middle" style="white-space: nowrap;"><h3>HTML + Boostrap 4</h3></div>
-								<div class="col-lg-3 align-middle pl-5"><span class="star-rating" data-rate="2"></span></div>
-							</div>
-							<p>
-								ネット上にあるサンプルを改変しサイト構築出来る程度の知識があります。<br>
-								このサイトもBoostrapのサンプルページをベースに作成しました。
-							</p>
-						</div>
+			<div class="row" style="padding: 50px; padding-left: 100px; padding-right: 100px;">
+				<div class="col">
+					<h1 style="font-weight: 600; color: #094067;">自己紹介</h1>
+					<div style="font-size: 20px; color: #0f3c5c;">
+						はじめまして。PavilionDV7と申します。<br>
+						Unreal Engine 4を主軸にゲーム制作、または関心の強いゲームAIについての実装・実験をしています。作品についてはPortfolioページにまとまっているので是非ご覧ください。<br>
+						<br>
+						制作以外にも制作/実験過程で知り得た情報は積極的にブログにて公開しています。ページ下部に各ブログへのリンクを貼っていますので、こちらも見ていただけると幸いです。
 					</div>
 				</div>
-
-
-				<h1>ブログ</h1>
-				<div class="row main-contents-desc">
-					<div class="col-lg-3"> はてなブログ </div>
-					<div class="col-lg-4"><a href="https://paviliondv7.hatenablog.com" target="_brank" rel="noopener">https://paviliondv7.hatenablog.com</a></div>
-					<div class="w-100 pb-2"></div>
-					<div class="col-lg-3"> Qiita </div>
-					<div class="col-lg-4"><a href="https://qiita.com/Dv7Pavilion" target="_brank" rel="noopener">https://qiita.com/Dv7Pavilion</a></div>
-				</div>
-
-				
-				<h1>コンタクト</h1>
-				<div class="row main-contents-desc">
-					<div class="col-lg-3"> メール </div>
-					<div class="col-lg-4"><a href="mailto:tanaka7yukio@gmail.com">tanaka7yukio@gmail.com</a></div>
-					<div class="w-100 pb-2"></div>
-					<div class="col-lg-3 "> Twitter </div>
-					<div class="col-lg-4"><a href="https://twitter.com/Dv7Pavilion" target="_brank" rel="noopener">@Dv7Pavilion</a></div>
-				</div>
-
 			</div>
-		</div>
-	</div>
 
-	<!-- Optional JavaScript -->
-	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-	<script src="https://code.jquery.com/jquery-3.5.1.min.js"
-		integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-		crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-		integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-		crossorigin="anonymous"></script>
 
-	<script>
-		$(".navbar-nav li a").each(function() {
-			var target = $(this).attr('href');
-			if(location.href.match(target)) {
-				$(this).parent().addClass('active');
-			} else {
-				$(this).parent().removeClass('active');
-			}
-		});
-	</script>
+			<div class="row" style="padding: 50px; padding-left: 100px; padding-right: 100px;">
+				<div class="col-12"><h1 style="font-weight: 600; color: #094067;">スキル</h1></div>
+				<div class="col-4 col-sm-8" style="font-size: 30px; color: #0f3c5c;">Unreal Engine 4</div>
+				<div class="col-8 col-sm-4"  style="font-size: 20px;"><span class="star-rating" data-rate="5"></span></div>
+				<div class="col-12" style="padding-top: 10px; padding-bottom: 20px; color: #0f3c5c;">
+					基本的な操作に加えUnreal C++を使ったゲームロジックの構築、新しいノードの追加とSlateを利用したエディタ拡張まで経験があります。マルチプレイゲームについてはUdemyの講座を参考に制作した程度です。
+				</div>
 
-</body>
+				<div class="col-4 col-sm-8" style="font-size: 30px; color: #0f3c5c;">OpenGL + SDL</div>
+				<div class="col-8 col-sm-4"  style="font-size: 20px"><span class="star-rating" data-rate="3"></span></div>
+				<div class="col-12" style="padding-top: 10px; padding-bottom: 20px; color: #0f3c5c;">
+					参考書を写経。その後、簡素な線描画による2Dシューティングゲームを自作した程度です。
+				</div>
+
+				<div class="col-4 col-sm-8" style="font-size: 30px; color: #0f3c5c;">HTML + Boostrap 4</div>
+				<div class="col-8 col-sm-4"  style="font-size: 20px"><span class="star-rating" data-rate="2"></span></div>
+				<div class="col-12" style="padding-top: 10px; padding-bottom: 20px; color: #0f3c5c;">
+					ネット上にあるサンプルを改変しサイト構築出来る程度の知識があります。<br>
+					このWebページもBoostrapのサンプルページをベースに作成しました。
+				</div>
+			</div>
+
+			<div class="row" style="padding: 50px; padding-left: 100px; padding-right: 100px;">
+				<div class="col-12"><h1 style="font-weight: 600; color: #094067;">ブログ</h1></div>
+				<div class="col-2 col-sm-4" style="font-size: 20px; color: #0f3c5c;">はてなブログ</div>
+				<div class="col-10 col-sm-8"  style="font-size: 20px">
+					<a href="https://paviliondv7.hatenablog.com" target="_brank" rel="noopener">https://paviliondv7.hatenablog.com</a>
+				</div>
+				<div class="col-2 col-sm-4"  style="font-size: 20px; color: #0f3c5c;">Qiita(停止中)</div>
+				<div class="col-10 col-sm-8"  style="font-size: 20px">
+					<a href="https://qiita.com/Dv7Pavilion" target="_brank" rel="noopener">https://qiita.com/Dv7Pavilion</a>
+				</div>	
+			</div>
+
+
+			<div class="row" style="padding: 50px; padding-left: 100px; padding-right: 100px;">
+				<div class="col-12"><h1 style="font-weight: 600; color: #094067;">コンタクト</h1></div>
+				<div class="col-2 col-sm-4"  style="font-size: 20px; color: #0f3c5c;">ツイッター</div>
+				<div class="col-10 col-sm-8"  style="font-size: 20px">
+					<a href="https://twitter.com/Dv7Pavilion" target="_brank" rel="noopener">@Dv7Pavilion</a>
+				</div>	
+				<div class="col-2 col-sm-4"  style="font-size: 20px; color: #0f3c5c;">メール</div>
+				<div class="col-10 col-sm-8"  style="font-size: 20px">
+					<a href="mailto:tanaka7yukio@gmail.com">tanaka7yukio@gmail.com</a>
+				</div>
+			</div>
+
+	</body>
 
 </html>

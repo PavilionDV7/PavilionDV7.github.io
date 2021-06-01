@@ -1,27 +1,6 @@
-/* @import url('https://fonts.googleapis.com/css?family=Montserrat:600|Open+Sans:600&display=swap'); */
-
-
-body {
-   font-family: "Roboto";
-   background-color: #fdfeff;
-   color:#4a545f;
-}
-
-
-.navbar.sticky-top {
-	font-size: 30px; 
-	font-weight: 700; 
-	background-color: #c4dcee;
-}
-
-.navbar-light .navbar-toggler-icon {
-	color:black;
-	background-color: coral;
-}
-
 .navbar-nav .nav-link {
 	color: #7198b4 !important;
-	border-bottom: 4px solid #c4dcee;
+	border-bottom: 4px solid #e3f2fd;
 }
 
 .navbar-nav .nav-link:hover {
