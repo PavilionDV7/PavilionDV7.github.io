@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Bootstrap demo</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+            crossorigin="anonymous">
+    </head>
+
+    <body>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+            crossorigin="anonymous"></script>
+
+        <header data-bs-theme="dark">
+            <div class="collapse text-bg-dark" id="navbarHeader">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-8 col-md-7 py-4">
+                            <h4>About</h4>
+                            <p class="text-body-secondary">Add some information about the album below, the author, or any other background context. Make it a few sentences long so folks can pick up
+                                some informative tidbits. Then, link them off to some social networking sites or contact information.</p>
+                        </div>
+                        <div class="col-sm-4 offset-md-1 py-4">
+                            <h4>Contact</h4>
+                            <ul class="list-unstyled">
+                                <li><a href="#" class="text-white">Follow on Twitter</a></li>
+                                <li><a href="#" class="text-white">Like on Facebook</a></li>
+                                <li><a href="#" class="text-white">Email me</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="navbar navbar-dark bg-dark shadow-sm">
+                <div class="container">
+                    <a href="#" class="navbar-brand d-flex align-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            aria-hidden="true" class="me-2" viewBox="0 0 24 24">
+                            <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z" />
+                            <circle cx="12" cy="13" r="4" />
+                        </svg>
+                        <strong>Album</strong>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <!-- <script type="text/javascript">
+            function createCards() {
+                const rowElem = document.getElementById("cardRow");
+                fetch('./project-data.json')
+                .then(response => response.json())
+                .then(data => {
+
+                    Object.keys(data).forEach(function(key){
+                        console.log([key] + ": " + data[key]);
+                        if([key] == 'example')
+                        {
+                            return;
+                        }
+
+                        const projectData = data[key];
+                        rowElem.insertAdjacentHTML('beforeend', `
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="img/`+projectData[`imgSrc`]+`/thumbnail.jpg" class="object-fit-md-scale-down rounded" width="100%" height="234">
+                                <div class="card-body">
+                                    <h4 class="card-title">`+projectData['title']+`</h4>
+                                    <h6 class="card-text text-muted">`+projectData['subTitle']+`</h6>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-md btn-primary" data-bs-toggle="modal" data-bs-target="#detailModal" data-bs-whatever="`+[key]+`">Detail</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        `);
+
+
+                    });
+                })
+                .catch(error => {
+                    console.error('JSONファイルが読み込めません.', error)
+                });
+            }
+            </script> -->
+
+
+            <div class="album py-5 bg-body-tertiary">
+                <div class="container">
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3" id="cardRow">
+
+                        <!-- カードの生成 -->
+                        <script type="text/javascript">
+                            function createCards() {
+                                const rowElem = document.getElementById("cardRow");
+                                fetch('./project-data.json')
+                                .then(response => response.json())
+                                .then(data => {
+                                    Object.keys(data).forEach(function (key) {
+                                        console.log([key] + ": " + data[key]);
+                                        if ([key] == 'example') {
+                                            return;
+                                        }
+                                        
+                                        const projectData = data[key];
+                                        rowElem.insertAdjacentHTML('beforeend', `
+                                        <div class="col">
+                                            <div class="card shadow-sm">
+                                                <img src="img/`+ projectData[`imgSrc`] + `/thumbnail.jpg" class="object-fit-md-scale-down rounded" width="100%" height="234">
+                                                <div class="card-body">
+                                                    <h4 class="card-title">`+ projectData['title'] + `</h4>
+                                                    <h6 class="card-text text-muted">`+ projectData['subTitle'] + `</h6>
+                                                    <div class="d-flex justify-content-between align-items-center">
+                                                        <div class="btn-group">
+                                                            <button type="button" class="btn btn-md btn-primary" data-bs-toggle="modal" data-bs-target="#detailModal" data-bs-whatever="`+ [key] + `">Detail</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        `);
+                                    });
+                                })
+                                .catch(error => {
+                                    console.error('JSONファイルが読み込めません.', error)
+                                });
+                            }
+
+                            // 上の関数を呼び出し.
+                            createCards();
+                        </script>
+
+                        <!-- <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="img/portfolio/PetitCon8/thumbnail.jpg" class="object-fit-md-cover rounded" width="100%" height="234">
+                                <div class="card-body">
+                                    <h4 class="card-title">煩悩を60秒間消し続けるやつ</h4>
+                                    <h6 class="card-text text-muted">第8回ぷちコン応募作品</h6>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-md btn-primary" data-bs-toggle="modal" data-bs-target="#detailModal" data-bs-whatever="petitcon19">Detail</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+
+                        <!-- <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="1280_720.jpg" class="object-fit-md-cover rounded" width="100%" height="234">
+                                <div class="card-body">
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-md btn-primary" data-bs-toggle="modal" data-bs-target="#detailModal" data-bs-whatever="petitcon18">Detail</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+
+
+                        <!-- <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="800_600.jpg" class="object-fit-md-cover rounded" width="100%" height="234">
+                                <div class="card-body">
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-md btn-primary" data-bs-toggle="modal" data-bs-target="#detailModal" data-bs-whatever="petitcon17">Detail</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+
+
+                        <!-- <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="1920_1080.jpg" class="object-fit-md-cover rounded" width="100%" height="234">
+                                <div class="card-body">
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">Detail</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+
+
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- モーダル -->
+            <div class="modal fade" id="detailModal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-dialog-scrollable modal-dialog-centered">
+                    <div class="modal-content">
+
+                        <div class="modal-header">
+                            <!-- カルーセル -->
+                            <div id="myCarousel" class="carousel slide carousel-fade">
+                                <div class="carousel-inner">
+
+                                    <!-- JavaScriptの方でここにアイテムが挿入される -->
+
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+
+                            <!-- ここまで カルーセル -->
+                        </div>
+
+                        <div class="modal-body">
+                             <!-- JavaScriptで生成 -->
+                        </div>
+
+                        <div class="modal-footer">
+                            <!-- JavaScriptで生成 -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ここまで モーダル -->
+
+            <script type="text/javascript">
+                const detailModal = document.getElementById('detailModal')
+                if (detailModal) {
+                    detailModal.addEventListener('show.bs.modal', event => {
+                        const button = event.relatedTarget
+                        const projectID = button.getAttribute('data-bs-whatever')
+                        
+
+                        fetch('./project-data.json')
+                        .then(response => response.json())
+                        .then(data => {
+                            const projectData = data[projectID]
+
+                            // カルーセルアイテム要素を生成.
+                            // プロジェクトのスクショを載せる.
+                            const carouselInner = detailModal.querySelector('.carousel-inner')
+                            for(var i=0; i<projectData["imgNum"]; i++)
+                            {
+                                // TODO: 一部プロジェクト(Simple Asteroid、Robot Vacuum等)ではカルーセルに表示する画像のサイズがでかすぎて説明文が読めない
+                                carouselInner.insertAdjacentHTML('beforeend', `
+                                <div class="carousel-item `+(i==0?`active`:``)+`" style="text-align: center">
+                                    <img src="img/`+projectData[`imgSrc`]+`/`+i+`.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                `);
+                            }
+
+                            // モーダルの内容を生成
+                            // プロジェクトの説明が載る
+                            const modalBody = detailModal.querySelector('.modal-body')
+                            modalBody.insertAdjacentHTML('beforeend', `
+                            <div>
+                                <h3>`+projectData[`subTitle`]+` : `+projectData[`title`]+`</h3>
+                            </div>
+                            <div>
+                                <h5>【使用エンジン】</h5>
+                                `+projectData[`engine`]+`
+                                <p>
+                                <h5>【制作日数】</h5>
+                                `+projectData[`productionTime`]+`
+                                <p>
+                                <h5>【説明】</h5>
+                                `+projectData[`description`]+`
+                            </div>
+                            `);
+
+                            // プレイ動画やソースへのアクセスボタンの生成.
+                            let videoButton = (!projectData[`videoURL`])?``:`
+                            <a href="`+projectData[`videoURL`]+`" target="_brank" rel="noopener">
+                                <button type="button" class="btn btn-primary">プレイ動画</button>
+                            </a>
+                            `;
+                            let packageButton = (!projectData[`packageURL`])?``:`
+                            <a href="`+projectData[`packageURL`]+`" target="_brank" rel="noopener">
+                                <button type="button" class="btn btn-primary">実行ファイル</button>
+                            </a>
+                            `
+                            let sourceButton = (!projectData[`sourceURL`])?``:`
+                            <a href="`+projectData[`videsourceURLoURL`]+`" target="_brank" rel="noopener">
+                                <button type="button" class="btn btn-primary">ソースコード</button>
+                            </a>
+                            `
+                            let closeButton = `<button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>`
+                            const modalFooter = detailModal.querySelector('.modal-footer')
+                            modalFooter.insertAdjacentHTML('beforeend', videoButton + packageButton + sourceButton + closeButton);
+                        })
+                        .catch(error => {
+                            console.error('JSONファイルが読み込めません.', error)
+                        });
+
+                    })
+
+
+                    detailModal.addEventListener('hidden.bs.modal', event => {
+                        const carouselInner = detailModal.querySelector('.carousel-inner')
+                        // insertAdjacentHTMLは実行する度に挿入されるのでカルーセルが無限に生成されてしまう
+                        // モーダルを閉じきったときにカルーセルのアイテムはすべて削除する.
+                        carouselInner.textContent = ''
+
+                        const modalBody = detailModal.querySelector('.modal-body')
+                        modalBody.textContent = ''
+
+                        const modalFooter = detailModal.querySelector('.modal-footer')
+                        modalFooter.textContent = ''
+                    })
+                }
+
+
+            </script>
+        </main>
+    </body>
+
+
+
+
+</html>
