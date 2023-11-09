@@ -154,6 +154,18 @@
       "packageURL": "",
       "sourceURL": ""
    },
+   "engineerbootcamp": {
+      "title": "エンジニアブートキャンプ 課題作品",
+      "subTitle": "エンジニアブートキャンプ 課題作品",
+      "imgSrc": "portfolio/EngineerBootCamp",
+      "imgNum": "5",
+      "engine": "C++ + DXライブラリ",
+      "productionTime": "1ヶ月",
+      "description": "2023年7月31日から始まった<a href='https://www.creativevillage.ne.jp/category/event-list/seminar/134835/' target='_blank'>エンジニアブートキャンプ ～C++を使ってゲーム開発の設計とコーディングを学ぼう！～</a>に参加した際に制作したゲームです。「2Dのアクションゲーム」というお題が出されたのでスーパーマリオライクなゲーム性にしました。<br>シンプルなゲーム開発ライブラリに触れ、改めて設計の楽しさと難しさ、ゲームエンジンの提供するインターフェースの強力さを身にしみて感じることができました。<br>ゲーム中に登場する素材はSEを<a href='http://tsugi-studio.com/web/jp/products-gamesynth.html' target='_blank'>GameSynth</a>というゲーム効果音生成ツールを利用して制作しました。SE以外のサウンドやグラフィックリソースは株式会社ヒストリア様から提供されたものやインターネット上で配布されている2次配布可能素材を利用しました。",
+      "videoURL": "https://youtu.be/bdOTHcVNLYk",
+      "packageURL": "https://drive.google.com/file/d/1uT11dwOpJYlBw96lE_FN8lNHBsIPP0e9/view?usp=drive_link",
+      "sourceURL": "https://drive.google.com/file/d/1ggPbfJ7J6udTZsgL1u10dWhaRacT8Lth/view?usp=drive_link"
+   },
    "primitiveshooter": {
       "title": "Primitive Shooter",
       "subTitle": "オリジナル作品第1弾",
